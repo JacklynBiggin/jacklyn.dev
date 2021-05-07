@@ -1,0 +1,59 @@
+
+.nav {
+	background-color: white;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 1em;
+	font-family: 'Balsamiq Sans', cursive;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: white;
+}
+
+.nav > div > div {
+	text-align: center;
+	transition: transform .2s ease-in-out;
+	cursor: pointer;
+}
+
+.nav > div > div:hover {
+	transform: scale(1.05);
+	border-radius: 4px;
+	z-index: 500;
+}
+
+.nav > div > div > span {
+	padding: 0.5em;
+	transition: transform .2s ease-in-out;
+	display: block;
+	opacity: 0.7;
+	text-shadow: var(--text-outline);
+}
+
+.nav > div > div > span:hover {
+	opacity: 1;
+}
+
+.nav > div > div:nth-child(1) {
+	background-color: var(--color-purple);
+	border-radius: var(--component-border-left);
+	margin-left: 15px;
+}
+
+.nav > div > div:nth-child(2) {
+	background-color: var(--color-red);
+}
+
+.nav > div > div:nth-child(3) {
+	background-color: var(--color-yellow);
+}
+
+.nav > div > div:nth-child(4) {
+	background-color: var(--color-green);
+}
+
+.nav > div > div:nth-child(5) {
+	background-color: var(--color-blue);
+	border-radius: var(--component-border-right);
+	margin-right: 15px;
+}

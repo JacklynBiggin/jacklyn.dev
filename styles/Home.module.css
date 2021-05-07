@@ -1,0 +1,100 @@
+.content {
+	background-color: white;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	padding: 1em;
+}
+
+.footer {
+	background-color: #1E152A;
+	border-radius: var(--component-border);
+	margin-top: 1em;
+	padding: 1em;
+	box-shadow: var(--component-shadow);
+}
+
+
+.hero {
+	background-image: url("https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+	background-size: cover;
+	background-position: center;;
+	height: 50vh;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 2em;
+	padding: 1em;
+}
+
+.label {
+	border-radius: 4px;
+	background-color: var(--color-yellow);
+	display: inline-block;
+	padding: 0.5em;
+	font-weight: bold;
+	
+}
+
+/* about */
+
+.header {
+	background-color: var(--color-green);
+	padding: 1em 1.5em;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 1.5em;
+}
+
+.header h2 {
+	font-family: 'Fredoka One', cursive;
+	font-size: 2.5em;
+	margin-bottom: 0;
+	color: white;
+	text-shadow: var(--text-outline);
+}
+
+.profile {
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	width: 100%;
+}
+
+/* projects */
+.project {
+	background-color: white;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 2em;
+	transition: transform .2s ease-in-out;
+	height: calc(100% - 2em);
+	background-position: center;
+	background-size: cover;
+}
+
+.project .wrapper {
+	padding: 3em;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.project:hover {
+	transform: scale(1.05);
+}
+
+
+.project .logo {
+	width: 10em;
+}
+
+.project .label {
+	position: absolute;
+	margin-top: 1em;
+	margin-left: 1em;
+	border-top-left-radius: 16px;
+}
+
+.projects > div > div:nth-child(1) > div > .wrapper > .logo {
+	width: 20em;
+}

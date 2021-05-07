@@ -1,0 +1,43 @@
+.title {
+	color: #FFF1FF;
+	font-family: 'Fredoka One', cursive;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	text-shadow: var(--text-outline);
+
+}
+
+.icons {
+	text-align: right;
+}
+
+.icons svg {
+	font-size: 2em;
+	margin-left: 0.5em;
+	color: #C6A4FD;
+	transition: transform .2s ease-in-out;
+}
+
+.tag {
+	background-color: var(--color-light-purple);
+	display: inline-block;
+	border-radius: 4px;
+	padding: 0.25em 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-left: 0.5em;
+	color: var(--color-dark-purple);
+	transition: transform .2s ease-in-out;
+}
+
+.icons svg:hover {
+	transform: scale(1.1);
+}
+
+.tag:hover {
+	transform: scale(1.05);
+}

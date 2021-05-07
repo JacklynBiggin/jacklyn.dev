@@ -1,0 +1,8 @@
+.body {
+	background-color: var(--color-dark-purple);
+	/*background-image: linear-gradient(#6823e7, #46257e);*/
+	min-height: 100vh;
+	/* check width later - needs to be full-width */
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
