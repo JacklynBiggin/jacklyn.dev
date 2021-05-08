@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import {Container, Row, Col} from 'react-bootstrap'
+import Link from 'next/link'
 
 export default function Projects() {
   return (
@@ -11,19 +12,21 @@ export default function Projects() {
         <div className={styles.projects}>
           <Row>
               <Col xs={12} md={8}>
-                <div className={styles.project} style={{
-                  background: `linear-gradient(
-                    rgba(14, 20, 40, 0.85),
-                    rgba(14, 20, 40, 0.85)
-                    ),
-                    /* bottom, image */
-                    url("./hq-background.jpeg")`
-                }}>
-                  <div className={styles.label}>community</div>
-                  <div className={styles.wrapper}>
-                    <img src="./hq-logo.png" className={styles.logo} />
+                <Link href="/projects/hackquarantine">
+                  <div className={styles.project} style={{
+                    background: `linear-gradient(
+                      rgba(14, 20, 40, 0.85),
+                      rgba(14, 20, 40, 0.85)
+                      ),
+                      /* bottom, image */
+                      url("./hq-background.jpeg")`
+                  }}>
+                    <div className={styles.label}>community</div>
+                    <div className={styles.wrapper}>
+                      <img src="./hq-logo.png" className={styles.logo} />
+                    </div>
                   </div>
-                </div>
+                </Link>
               </Col>
               <Col xs={12} md={4}>
               <div className={styles.project} style={{

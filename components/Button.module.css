@@ -1,0 +1,45 @@
+.button {
+	background-image: linear-gradient(to left, #FFE5E5 50%, var(--color-red) 50%);
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	background-size: 200%;
+	background-position: 100%;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+	font-family: "Inter", cursive;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+a .button {
+	text-decoration: none !important;
+	color: black;
+}
+
+
+
+.button:hover {
+	background-position: 0%;
+	transform: scale(1.05);
+}
+
+.button > div {
+	margin-left: 0;
+}
+
+.button > div > div {
+	padding: 1em;
+}
+
+.button > div > div:nth-child(1) {
+	background-color: var(--color-red);
+	border-radius: var(--component-border-left);
+	text-align: center;
+}
+
+.button svg {
+	color: white;
+	font-size: 1.3em;
+	opacity: 0.8;
+}
