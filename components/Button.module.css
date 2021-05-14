@@ -17,8 +17,6 @@ a .button {
 	color: black;
 }
 
-
-
 .button:hover {
 	background-position: 0%;
 	transform: scale(1.05);

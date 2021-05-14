@@ -57,3 +57,48 @@
 	border-radius: var(--component-border-right);
 	margin-right: 15px;
 }
+
+
+.hiddennav {
+	border-radius: var(--component-border);
+	background-color: var(--color-purple);
+	font-family: 'Balsamiq Sans', cursive;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: white;
+	box-shadow: var(--component-shadow);
+	text-align: center;
+	text-shadow: var(--text-outline);
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.nav > div > div:nth-child(1) {
+		border-radius: var(--component-border-top);
+		margin-left: 0;
+	}
+
+	.nav > div > div:nth-child(5) {
+		border-radius: var(--component-border-bottom);
+	}
+
+	.nav > div > div:nth-child(1):hover {
+		border-radius: 32px 32px 4px 4px;
+	}
+
+	.nav > div > div:nth-child(5):hover {
+		border-radius: 4px 4px 32px 32px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.nav {
+		display: block !important;
+	}
+}

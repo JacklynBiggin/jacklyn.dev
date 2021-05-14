@@ -11,6 +11,7 @@
 
 .icons {
 	text-align: right;
+	display: block;
 }
 
 .icons svg {
@@ -20,24 +21,56 @@
 	transition: transform .2s ease-in-out;
 }
 
-.tag {
+
+.tag div {
 	background-color: var(--color-light-purple);
 	display: inline-block;
 	border-radius: 4px;
 	padding: 0.25em 0.5em;
-	margin-top: 0.5em;
-	margin-bottom: 1em;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-left: 0.5em;
+	margin-top: 0.5em;
 	color: var(--color-dark-purple);
 	transition: transform .2s ease-in-out;
 }
+
+@media only screen and (max-width: 768px) {
+	.icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1em;
+	}
+
+	.iconcontainer {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.tag div {
+		display: inline-block;
+		margin-top: 0;
+	}
+
+	.title {
+		font-size: 3em;
+		text-align: center;
+		margin-bottom: 0; 
+	}
+}
+
+
 
 .icons svg:hover {
 	transform: scale(1.1);
 }
 
-.tag:hover {
+.tag div:hover {
 	transform: scale(1.05);
+}
+
+.hand {
+	display: inline-block;
 }

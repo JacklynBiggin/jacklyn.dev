@@ -2,7 +2,7 @@
 	background-color: white;
 	border-radius: var(--component-border);
 	box-shadow: var(--component-shadow);
-	padding: 1em;
+	padding: 2em;
 	margin-bottom: 2em;
 }
 
@@ -47,11 +47,11 @@
 
 .content .header {
 	border-radius: var(--component-border-top);
-	margin-left: -1em;
-	margin-right: -1em;
-	margin-top: -1em;
+	margin-left: -2em;
+	margin-right: -2em;
+	margin-top: -2em;
 	box-shadow: none;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .header h2, .header h3 {
@@ -275,4 +275,36 @@
 		margin-right: 0.3em;
 	}
 
+}
+
+.contactform label {
+	background-color: var(--color-blue-light);
+	padding: 0.5em;
+	color: #1a1a1a;
+	border-radius: 8px 8px 0 0;
+	font-weight: bold;
+	margin-bottom: 0;
+	font-family: "Inter", sans-serif;
+}
+
+.contactform input, .contactform textarea {
+	border-radius: 0 16px 16px 16px;
+	border-color: #9a9a9a;
+	font-family: "Inter", sans-serif;
+}
+
+.submitbutton {
+	padding: 1em 1.5em;
+	background-color: var(--color-blue);
+	border-radius: var(--component-border) !important;
+	font-weight: bold;
+	display: inline-block;
+	text-shadow: var(--text-outline);
+	color: white;
+	border: 0;
+	transition: transform .2s ease-in-out;
+}
+
+.submitbutton:hover {
+	transform: scale(1.05);
 }
