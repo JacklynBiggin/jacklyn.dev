@@ -28,6 +28,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 
 .logoaward {
 	width: 100%;
+	border-radius: 8px;
 }
 
 .info ul {

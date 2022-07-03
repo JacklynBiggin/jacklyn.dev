@@ -198,8 +198,7 @@ export default function About() {
 							name="MLH Top 50"
 							institution="Major League Hacking"
 							from="June 2021"
-							image="./images/logos/awards/top50.svg"
-							inverted={true}
+							image="./images/logos/awards/top50.png"
 						/>
 						<ExperienceBox
 							type="award"
@@ -219,7 +218,7 @@ export default function About() {
 						/>
 						<ExperienceBox
 							type="award"
-							color="var(--color-mlhbg)"
+							color="var(--color-white)"
 							name="14x Hackathon Category Wins"
 							from="September 2018"
 							to="May 2019"
