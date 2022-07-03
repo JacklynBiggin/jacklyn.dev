@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 export default function ExperienceBox(props) {
 
     return (
-        <div className={`content low-padding ${props.type == "award" ? "low-margin-bottom" : ""}`} style={{ backgroundColor: props.color }}>
+        <div className={`content low-padding ${props.type == "award" ? "low-margin-bottom" : ""} ${props.type == "education" ? styles.edu : null}`} style={{ backgroundColor: props.color }}>
             <Row style={props.inverted ? { color: "var(--color-white)" } : null}>
                 <Col xs={3}>
                     <img className={props.type == "award" ? styles.logoaward : styles.logo} src={props.image} />

@@ -33,3 +33,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 .info ul {
 	padding-left: 1em;
 }
+
+.edu {
+	height: calc(100% - 2em);
+}
