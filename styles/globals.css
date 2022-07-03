@@ -17,6 +17,7 @@
   --color-dark-purple: #46257e;
   --color-light-purple: #c5a4fd;
   --color-white: #ececec;
+  --color-dark-gray: #1a1a1a;
 
   /* Misc colours */
   --color-leedsbg: #D8D3D4;
@@ -152,6 +153,25 @@ p a:hover {
 	padding: 0.5em;
   display: inline-block;
   margin-right: 0.5em;
+}
+
+.label-bottom-container {
+  font-weight: bold;
+  top: 1em;
+  right: 2em;
+  display: inline-block;
+  position: absolute;
+  transition: all .2s ease-in-out;
+}
+
+.label-bottom {
+	border-radius: 4px;
+	background-color: var(--color-dark-gray);
+	padding: 0.5em;
+  margin-left: 0.5em;
+  display: inline-block;
+  color: var(--color-white);
+  border-top-right-radius: 16px;
 }
 
 .content {

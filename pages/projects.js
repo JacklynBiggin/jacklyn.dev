@@ -1,8 +1,12 @@
+import React, { useState } from "react";
 import styles from '../styles/projects.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import ProjectTile from '../components/ProjectTile'
 
 export default function Projects() {
+
+	const [oldProjectsShown, setOldProjectsShown] = useState(false)
+
 	return (
 		<div className={styles.body}>
 			<Container>
@@ -12,7 +16,7 @@ export default function Projects() {
 				<div className={styles.projects}>
 					<Row>
 						<Col xs={12} md={8}>
-						<ProjectTile
+							<ProjectTile
 								label="community"
 								link="/projects/hackquarantine"
 								logo="./images/logos/projects/hackquarantine.png"
@@ -23,7 +27,7 @@ export default function Projects() {
 									),
 									/* bottom, image */
 									url("./images/backgrounds/projects/hackquarantine.jpeg")'
-							 />
+							/>
 						</Col>
 						<Col xs={12} md={4}>
 							<ProjectTile
@@ -32,7 +36,7 @@ export default function Projects() {
 								logo="./images/logos/projects/autocodevideos.png"
 								mediumlogo
 								background='url("./images/backgrounds/projects/autocodevideos.jpg")'
-							 />
+							/>
 						</Col>
 						<Col xs={12} md={4}>
 							<ProjectTile
@@ -41,7 +45,7 @@ export default function Projects() {
 								logo="./images/logos/projects/capitalone.png"
 								mediumlogo
 								background='url("./images/backgrounds/projects/capitalone.png")'
-							 />
+							/>
 						</Col>
 						<Col xs={12} md={4}>
 							<ProjectTile
@@ -49,7 +53,7 @@ export default function Projects() {
 								link="/projects/blahajgang"
 								logo="./images/logos/projects/blahajgang.png"
 								background='url("./images/backgrounds/projects/blahajgang.png")'
-							 />
+							/>
 						</Col>
 						<Col xs={12} md={4}>
 							<ProjectTile
@@ -57,11 +61,48 @@ export default function Projects() {
 								link="/projects/ghwstreams"
 								logo="./images/logos/projects/ghwstreams.png"
 								background='linear-gradient(180deg, #1c214d, #38439c)'
-							 />
+							/>
+						</Col>
+						{oldProjectsShown ?
+							<>
+								<Col xs={12} md={4}>
+									<ProjectTile
+										label="code,2019"
+										link="/projects/lsr"
+										mediumlogo
+										logo="./images/logos/projects/lsr.png"
+										background='linear-gradient(180deg, #390e1c, #1a0710)'
+									/>
+								</Col>
+								<Col xs={12} md={4}>
+									<ProjectTile
+										label="hackathon project,2019"
+										link="https://devpost.com/software/sharescription"
+										logo="./images/logos/projects/sharescription.png"
+										mediumlogo
+										background='linear-gradient(180deg, #00C9FF, #92FE9D)'
+									/>
+								</Col>
+								<Col xs={12} md={4}>
+									<ProjectTile
+										label="hackathon project,2018"
+										link="https://devpost.com/software/ride-fyi"
+										logo="./images/logos/projects/ridefyi.png"
+										mediumlogo
+										background='url("./images/backgrounds/projects/ridefyi.png")'
+									/>
+								</Col>
+							</>
+							: null}
+						<Col xs={12} md={12}>
+							<div className={styles.tagContainer}>
+								<div className={styles.tag} onClick={() => setOldProjectsShown(!oldProjectsShown)}>
+									{oldProjectsShown ? "Hide Older Projects" : "Show Older Projects"}
+								</div>
+							</div>
 						</Col>
 					</Row>
 				</div>
-
 			</Container>
 		</div>
 	)
