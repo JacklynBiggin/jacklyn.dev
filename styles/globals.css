@@ -125,13 +125,21 @@ a {
 	font-size: 1.6em;
 }
 
+.label-container {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.label-container .label:first-child {
+  border-top-left-radius: 16px;
+}
+
 .label {
 	border-radius: 4px;
 	background-color: var(--color-yellow);
-	display: inline-block;
 	padding: 0.5em;
-	font-weight: bold;
-  border-top-left-radius: 16px;
+  display: inline-block;
+  margin-right: 0.5em;
 }
 
 .content {

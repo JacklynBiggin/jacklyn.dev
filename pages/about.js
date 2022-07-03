@@ -1,6 +1,5 @@
 import styles from '../styles/about.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import ExperienceBlock from '../components/ExperienceBlock'
 import ExperienceBox from '../components/ExperienceBox'
 
 export default function About() {

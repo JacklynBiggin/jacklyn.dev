@@ -1,0 +1,39 @@
+.project {
+	background-color: white;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 2em;
+	transition: transform .2s ease-in-out;
+	height: calc(100% - 2em);
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.project .wrapper {
+	padding: 3em;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.project:hover {
+	transform: scale(1.05);
+}
+
+
+.project .logo {
+	width: 10em;
+}
+
+.project > div:first-child {
+	position: absolute;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.projects > div > div:nth-child(1) > div > .wrapper > .logo {
+	width: 20em;
+}
