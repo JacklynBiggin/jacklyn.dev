@@ -7,7 +7,7 @@ export default function ProjectTile(props) {
         "community": "var(--color-yellow)",
         "video": "var(--color-green)",
         "code": "var(--color-blue)",
-        "written": "var(--color-red)",
+        "writing": "var(--color-red)",
         "talk": "var(--color-purple)"
     }
 
@@ -28,7 +28,7 @@ export default function ProjectTile(props) {
             }}>
                 <div className="label-container">{displayLabels}</div>
                 <div className={styles.wrapper}>
-                    <img src={props.logo} className={styles.logo} style={props.largelogo ? {width: "20em"}: null} />
+                    <img src={props.logo} className={styles.logo} style={props.largelogo ? {width: "20em"}: null ||  props.mediumlogo ? {width: "15em"}: null} />
                 </div>
             </div>
         </Link>

@@ -29,8 +29,18 @@ export default function Projects() {
 							<ProjectTile
 								label="video"
 								link="/projects/autocodevideos"
-								logo="./images/logos/projects/blahajgang.png"
+								logo="./images/logos/projects/autocodevideos.png"
+								mediumlogo
 								background='url("./images/backgrounds/projects/autocodevideos.jpg")'
+							 />
+						</Col>
+						<Col xs={12} md={4}>
+							<ProjectTile
+								label="writing,video"
+								link="/projects/capitalone"
+								logo="./images/logos/projects/capitalone.png"
+								mediumlogo
+								background='url("./images/backgrounds/projects/capitalone.png")'
 							 />
 						</Col>
 						<Col xs={12} md={4}>
@@ -39,17 +49,6 @@ export default function Projects() {
 								link="/projects/blahajgang"
 								logo="./images/logos/projects/blahajgang.png"
 								background='url("./images/backgrounds/projects/blahajgang.png")'
-							 />
-						</Col>
-						<Col xs={12} md={4}>
-							<ProjectTile
-								label="written,video"
-								link="/projects/capitalone"
-								logo="./images/logos/projects/blahajgang.png"
-								background='linear-gradient(
-									rgba(26, 26, 26, 0.3),
-									rgba(26, 26, 26, 0.3)
-									), url("./images/backgrounds/projects/capitalone.png")'
 							 />
 						</Col>
 						<Col xs={12} md={4}>
