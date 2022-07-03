@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import Link from 'next/link'
 import {Container, Row, Col} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faTwitter, faYoutube, faTwitch } from '@fortawesome/free-brands-svg-icons'
@@ -8,7 +9,7 @@ export default function Header() {
       <Container>
         <Row>
           <Col xs={12} md={8}>
-          <h1 class={styles.title}>Hey, I'm Jacklyn! <span className={`${styles.hand} animate__animated animate__tada`}>👋</span></h1>
+          <Link href="./"><h1 class={styles.title}>Hey, I'm Jacklyn! <span className={`${styles.hand} animate__animated animate__tada`}>👋</span></h1></Link>
           </Col>
           <Col xs={12} md={4}>
           <div className={styles.iconcontainer}>

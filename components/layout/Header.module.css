@@ -6,7 +6,12 @@
 	margin-top: 0.1em;
 	margin-bottom: 0.5em;
 	text-shadow: var(--text-outline);
+	cursor: pointer;
+	transition: transform .2s ease-in-out;
+}
 
+.title:hover {
+	transform: scale(1.01);
 }
 
 .icons {
