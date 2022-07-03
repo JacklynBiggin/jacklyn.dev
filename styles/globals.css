@@ -85,8 +85,20 @@ p, li {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' stroke='black' stroke-width='1' stroke-linecap='butt' fill='%23ffffff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-a {
-	text-decoration: none !important;
+a {	
+  text-decoration: none !important;
+}
+
+p a {
+  color: var(--color-dark-purple);
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+}
+
+p a:hover {
+  color: var(--color-light-purple);
+  transform: scale(1.01);  
 }
 
 .header {

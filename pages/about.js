@@ -1,6 +1,7 @@
 import styles from '../styles/about.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import ExperienceBox from '../components/ExperienceBox'
+import Link from 'next/link'
 
 export default function About() {
 	return (
@@ -26,7 +27,12 @@ export default function About() {
 					<Col xs={12} md={8}>
 						<div className={`content full-height`}>
 							<p className={styles.handwritten}>Hey, I'm Jacklyn! 👋</p>
-							<p>Suspendisse sagittis cursus felis, eu bibendum urna. Phasellus suscipit, mauris id imperdiet dictum, est odio accumsan eros, non fringilla quam dolor in turpis. Etiam commodo elit leo, et blandit augue dictum vel. Donec condimentum enim vel massa interdum, faucibus sodales nunc hendrerit. Maecenas tortor tellus, tempus non tempor finibus, venenatis eu mauris. In aliquet viverra nibh. Donec venenatis consequat libero vel condimentum. Etiam posuere sodales neque eget eleifend. Etiam et tempor magna. Vestibulum nunc tortor, hendrerit eu mi sit amet, laoreet dictum libero. Nullam urna ligula, volutpat quis fringilla in, finibus et turpis. Curabitur fermentum bibendum nisi, viverra feugiat lacus consectetur sit amet. Etiam eu augue non augue auctor pellentesque. Sed lacinia nibh vel sem aliquam sollicitudin. Aliquam erat volutpat. Mauris et ex a sem pulvinar mollis.</p>
+							<p>I'm a developer advocate, lover of sharks, and always in search of opportunities to help newbies break into tech.</p>
+							<p>Currently, I'm working as a Developer Relations Lead at <a href="https://autocode.com">Autocode</a> where I empower young developers to make Discord Bots, APIs and more! You might have seen one of my <a href="https://youtube.com/autocodetv">tutorial videos</a> or <a href="https://autocode.com/community/tags/tutorial/">read one of my guides</a> if you're coming over to this website from Autocode.</p>
+							<p>On the side, I support students running hackathons through <a href="https://mlh.io">Major League Hacking</a>. If you've ever listened to someone explaining the Code of Conduct at a Canadian hackathon, there's a decent chance the person on the stage was me!</p>
+							<p>I'm originally from the UK (but not from London - there's other cities, I promise), and I currently live in Toronto, Canada where I spend an embarrasingly large amount of time drinking Tim Hortons and running away from Canada geese.</p>
+							<p>If you're looking for someone to speak at an event, help mentor new programmers or just want to chat, please feel free to <Link href="./contact">get in touch</Link>!</p>
+							<p>Chat soon!</p>
 						</div>
 					</Col>
 				</Row>
