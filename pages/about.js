@@ -92,9 +92,8 @@ export default function About() {
 							image="./images/logos/experience/autocode.svg"
 							bullets={
 								[
-									"bullet 1",
-									"bullet 2",
-									"bullet 3"
+									"Developed and documented sample APIs, web-apps and bots for users to learn from",
+									"Scripted and presented technical education videos focused on JavaScript and API fundamentals watched over 180,000 times by users"
 								]
 							}
 						/>
@@ -108,9 +107,10 @@ export default function About() {
 							image="./images/logos/experience/mlh.jpeg"
 							bullets={
 								[
-									"bullet 1",
-									"bullet 2",
-									"bullet 3"
+									"Mentored students and supported organizers at 40+ hackathons across Europe, North America and online",
+									"Evangelized sponsored technical products such as Google Cloud, Twilio and Domain.com",
+									"Wrote and hosted technical workshops and livestreams for international audiences of between 10 and 350+ participants",
+									"Trained newer team members in developer advocacy and event management"
 								]
 							}
 						/>
@@ -124,9 +124,23 @@ export default function About() {
 							image="./images/logos/experience/rbc.png"
 							bullets={
 								[
-									"bullet 1",
-									"bullet 2",
-									"bullet 3"
+									"Managed various OpenShift education and community initiatives within RBC, heavily contributing to the team winning a Silo Buster award and educating over 700 developers across the organization",
+									"Coordinated platform resiliency initiatives while developing features for existing applications to ensure good customer experience"
+								]
+							}
+						/>
+
+						<ExperienceBox
+							type="work"
+							name="Founder &amp; Lead Organizer"
+							institution="Hack Quarantine"
+							from="March 2020"
+							to="May 2020"
+							image="./images/logos/experience/hackquarantine.jpeg"
+							bullets={
+								[
+									"Managed a team of 20 volunteers to organize a 3,500 participant, three-week online hackathon focused on solving issues relating to COVID-19 in just ten days",
+									"Achieved record breaking metrics, with 251 project submissions, 40,000 unique website visitors and 1.9 million minutes of video content being consumed during the event"
 								]
 							}
 						/>
@@ -140,9 +154,9 @@ export default function About() {
 							image="./images/logos/experience/lsr.jpeg"
 							bullets={
 								[
-									"bullet 1",
-									"bullet 2",
-									"bullet 3"
+									"Overhauled station broadcasting infrastructure, improving UX, and increasing productivity and online output while reducing future costs",
+									"Coordinated outside broadcasts, supported presenters with technical issues and ensured uptime in a fast-paced environment",
+									"Responsible for the station achieving bronze for Best Technical Achievement at the Student Radio Awards"
 								]
 							}
 						/>
@@ -156,9 +170,7 @@ export default function About() {
 							image="./images/logos/experience/rbc.png"
 							bullets={
 								[
-									"bullet 1",
-									"bullet 2",
-									"bullet 3"
+									"Worked in a team of four to implement design thinking methodologies within Capital Markets while collaborating with executive stakeholders to deliver their vision"
 								]
 							}
 						/>
@@ -190,7 +202,7 @@ export default function About() {
 							name="Outstanding Contribution"
 							institution="Leeds University Union"
 							from="May 2019"
-							image="./images/logos/awards/luu.svg"
+							image="./images/logos/awards/luu.jpeg"
 						/>
 						<ExperienceBox
 							type="award"
@@ -202,11 +214,11 @@ export default function About() {
 						/>
 						<ExperienceBox
 							type="award"
-							color="var(--color-white)"
+							color="var(--color-mlhbg)"
 							name="14x Hackathon Category Wins"
 							from="September 2018"
 							to="May 2019"
-							image="./images/logos/experience/mlh.svg"
+							image="./images/logos/experience/mlh.jpeg"
 						/>
 					</Col>
 				</Row>

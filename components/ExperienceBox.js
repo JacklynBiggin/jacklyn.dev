@@ -8,7 +8,7 @@ export default function ExperienceBox(props) {
                 <Col xs={3}>
                     <img className={props.type == "award" ? styles.logoaward : styles.logo} src={props.image} />
                 </Col>
-                <Col xs={9} className={styles.educationinfo}>
+                <Col xs={9} className={styles.info}>
                     <p><strong>{props.name}</strong></p>
                     <p>{props.institution}</p>
                     <p>{props.from} {props.to ? "to " + props.to : null}</p>
