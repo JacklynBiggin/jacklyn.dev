@@ -23,9 +23,13 @@
 	transform: scale(1.05);
 }
 
+.project:hover img {
+	transform: scale(1.05);
+}
 
 .project .logo {
 	width: 10em;
+	transition: transform .2s ease-in-out;
 }
 
 .project > div:first-child {

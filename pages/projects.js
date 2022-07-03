@@ -15,10 +15,11 @@ export default function Projects() {
 				</div>
 				<div className={styles.projects}>
 					<Row>
-						<Col xs={12} md={8}>
+						<Col xs={12} md={12} lg={8}>
 							<ProjectTile
 								label="community"
-								link="/projects/hackquarantine"
+								link="https://hackquarantine.com/"
+								//link="/projects/hackquarantine"
 								logo="./images/logos/projects/hackquarantine.png"
 								largelogo
 								background='linear-gradient(
@@ -29,52 +30,57 @@ export default function Projects() {
 									url("./images/backgrounds/projects/hackquarantine.jpeg")'
 							/>
 						</Col>
-						<Col xs={12} md={4}>
+						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="video"
-								link="/projects/autocodevideos"
+								link="https://youtube.com/autocodetv"
+								//link="/projects/autocodevideos"
 								logo="./images/logos/projects/autocodevideos.png"
 								mediumlogo
 								background='url("./images/backgrounds/projects/autocodevideos.jpg")'
 							/>
 						</Col>
-						<Col xs={12} md={4}>
+						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="writing,video"
-								link="/projects/capitalone"
+								link="https://www.youtube.com/watch?v=p4qdvP9HeoU&list=PLPDgudJ_VDUcgpSq_T1NdXaevNLawrOGo&index=8"
+								//link="/projects/capitalone"
 								logo="./images/logos/projects/capitalone.png"
 								mediumlogo
 								background='url("./images/backgrounds/projects/capitalone.png")'
 							/>
 						</Col>
-						<Col xs={12} md={4}>
+						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="community"
-								link="/projects/blahajgang"
+								link="https://blahagang.lol"
+								//link="/projects/blahajgang"
 								logo="./images/logos/projects/blahajgang.png"
 								background='url("./images/backgrounds/projects/blahajgang.png")'
 							/>
 						</Col>
-						<Col xs={12} md={4}>
+						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="video"
-								link="/projects/ghwstreams"
+								link="https://www.youtube.com/watch?v=CcHc6mSya7c"
+								//link="/projects/ghwstreams"
 								logo="./images/logos/projects/ghwstreams.png"
 								background='linear-gradient(180deg, #1c214d, #38439c)'
 							/>
 						</Col>
 						{oldProjectsShown ?
 							<>
-								<Col xs={12} md={4}>
+								<Col xs={12} md={6} lg={4}>
 									<ProjectTile
 										label="code,2019"
-										link="/projects/lsr"
+										link="https://thisislsr.com"
+										//link="/projects/lsr"
 										mediumlogo
 										logo="./images/logos/projects/lsr.png"
 										background='linear-gradient(180deg, #390e1c, #1a0710)'
 									/>
 								</Col>
-								<Col xs={12} md={4}>
+								<Col xs={12} md={6} lg={4}>
 									<ProjectTile
 										label="hackathon project,2019"
 										link="https://devpost.com/software/sharescription"
@@ -83,7 +89,7 @@ export default function Projects() {
 										background='linear-gradient(180deg, #00C9FF, #92FE9D)'
 									/>
 								</Col>
-								<Col xs={12} md={4}>
+								<Col xs={12} md={6} lg={4}>
 									<ProjectTile
 										label="hackathon project,2018"
 										link="https://devpost.com/software/ride-fyi"
