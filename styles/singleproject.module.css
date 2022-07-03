@@ -1,0 +1,36 @@
+
+.projecthero {
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 2em;
+}
+
+.projecthero > div > div > div {
+	padding: 3em;
+	min-height: 24em;
+	border-radius: var(--component-border);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.projecthero img {
+	width: 32em;
+}
+
+@media only screen and (max-width: 768px) {
+	.projecthero img {
+		width: 20em;
+	}
+}
+
+.projecthero span {
+	color: white;
+	font-family: "Balsamiq Sans", cursive;
+	font-weight: bold;
+	margin-top: 1em;
+	font-size: 2em;
+	text-shadow: var(--text-outline);
+	text-align: center;
+}

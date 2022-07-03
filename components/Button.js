@@ -11,8 +11,8 @@ export default function Button(props) {
         <a href={props.link}>
             <div className={styles.button} style={{backgroundImage: `linear-gradient(to left, var(${props.color}-light) 50%, var(${props.color}) 50%)`}}>
                 <Row>
-                    <Col xs={3} md={2} style={{backgroundColor: `var(${props.color})`}}><div className={styles.icon}><FontAwesomeIcon icon={props.icon} fixedWidth /></div></Col>
-                    <Col xs={9} md={10}>{props.text}</Col>
+                    <Col xs={4} lg={3} xl={2} style={{backgroundColor: `var(${props.color})`}}><div className={styles.icon}><FontAwesomeIcon icon={props.icon} fixedWidth /></div></Col>
+                    <Col xs={8} lg={9} xl={10}>{props.text}</Col>
                 </Row>
             </div>
         </a>

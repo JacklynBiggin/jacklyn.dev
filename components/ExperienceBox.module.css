@@ -1,0 +1,31 @@
+/* There's almost definitely a better way of doing this, but this'll do the job for now
+This is what handles the size/weight/spacing of the text in the education boxes */
+.educationinfo p {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	font-size: 0.9em;
+}
+.educationinfo p:first-child {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+.educationinfo p:nth-child(2) {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+.educationinfo p:nth-child(3) {
+	font-size: 0.8em;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.logoaward {
+	width: 100%;
+}

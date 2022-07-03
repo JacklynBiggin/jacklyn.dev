@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from '../styles/Home.module.css'
+import styles from '../styles/contact.module.css'
 import {Container, Row, Col, Form} from 'react-bootstrap'
 import Button from "../components/Button";
 import { faLinkedin, faTwitch, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -29,13 +29,13 @@ export default function Contact() {
   return (
     <div className={styles.body}>
       <Container>
-        <div className={styles.header} style={{backgroundColor: "var(--color-blue)"}}>
+        <div className="header" style={{backgroundColor: "var(--color-blue)"}}>
             <h2>📨 Contact Me</h2>
         </div>
         <Row>
             <Col xs={12} lg={7} xl={8}>
-                <div className={styles.content}>
-                  <div className={styles.header} style={{backgroundColor: "var(--color-blue)"}}>
+                <div className="content">
+                  <div className="header" style={{backgroundColor: "var(--color-blue)"}}>
                     <h3>📫 Send me an Email!</h3>
                   </div>
 
@@ -66,7 +66,7 @@ export default function Contact() {
             </Col>
             <Col xs={12} lg={5} xl={4}>
               <div className="d-none d-lg-block">
-                <div className={styles.header} style={{backgroundColor: "var(--color-blue)"}}>
+                <div className="header" style={{backgroundColor: "var(--color-blue)"}}>
                   <h3>🌟 Socials</h3>
                 </div>
                 <Button color="--color-blue" text="Twitter" icon={faTwitter} link="https://twitter.com/JackBiggin"/>

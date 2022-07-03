@@ -1,0 +1,114 @@
+.profile {
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+.tldr {
+	list-style: none;
+	list-style-position: outside;
+	padding: 0;
+	margin: 0;
+}
+
+.tldr li {
+	padding-left: 1rem;
+    /*text-indent: -0.7rem;*/
+	margin-bottom: 0.5em;
+}
+
+.tldr li::before {
+	text-shadow: var(--text-outline-small);
+	margin-right: 0.5em;
+}
+
+.tldr li:nth-child(1)::before {
+	content: "📍 ";
+}
+
+.tldr li:nth-child(2)::before {
+	content: "👩‍💼 ";
+}
+
+.tldr li:nth-child(3)::before {
+	content: "🌟 ";
+}
+
+.handwritten {
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	margin-left: 0;
+}
+
+.award {
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	background-color: white;
+	padding: 1em;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 1em;
+}
+
+.award img {
+	width: 6em;
+	margin-bottom: 1em;
+}
+
+.award > div:first-of-type {
+	font-weight: bold;
+}
+
+.ilsra {
+	background-color: #e7eff9;
+	background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+}
+
+.award2 {
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #ececec;
+}
+
+.award2 img {
+	width: 10em;
+}
+
+.award3 {
+	background-color: #47c2ed;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* There's almost definitely a better way of doing this, but this'll do the job for now
+This is what handles the size/weight/spacing of the text in the education boxes */
+.educationinfo p {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	font-size: 0.9em;
+}
+.educationinfo p:first-child {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+.educationinfo p:nth-child(2) {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+.educationinfo p:nth-child(3) {
+	font-size: 0.8em;
+}

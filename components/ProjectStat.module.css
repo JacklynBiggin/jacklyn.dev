@@ -1,0 +1,45 @@
+.stat {
+	background-color: var(--color-red);
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	padding: 1em;	
+	margin-bottom: 2em;
+	height: calc(100% - 2em);
+	text-align: center;
+}
+
+.stat span {
+	display: block;
+	color: white;
+	font-family: "Balsamiq Sans", cursive;
+}
+
+.stat span:nth-child(1) {
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow: var(--text-outline);
+	margin-bottom: -0.25em;
+}
+
+.stat span:nth-child(2) {
+	text-shadow: var(--text-outline);
+	font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+
+	.stat {
+		height: auto;
+		margin-bottom: 1em;
+	}
+
+	.stat span {
+		display: inline;
+	}
+
+	.stat span:nth-child(1) {
+		font-size: 1.5em;
+		margin-right: 0.3em;
+	}
+
+}

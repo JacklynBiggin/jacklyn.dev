@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/projects.module.css'
 import {Container, Row, Col} from 'react-bootstrap'
 import Link from 'next/link'
 
@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className={styles.body}>
       <Container>
-        <div className={styles.header} style={{backgroundColor: "var(--color-red)"}}>
+        <div className="header" style={{backgroundColor: "var(--color-red)"}}>
             <h2>🛠 Projects</h2>
         </div>
         <div className={styles.projects}>
@@ -21,7 +21,7 @@ export default function Projects() {
                       /* bottom, image */
                       url("./hq-background.jpeg")`
                   }}>
-                    <div className={styles.label}>community</div>
+                    <div className="label">community</div>
                     <div className={styles.wrapper}>
                       <img src="./hq-logo.png" className={styles.logo} />
                     </div>
@@ -31,7 +31,8 @@ export default function Projects() {
               <Col xs={12} md={4}>
               <div className={styles.project} style={{
                   backgroundImage: `url("./blahaj-bg.png")`
-                }}>                  <div className={styles.label}>community</div>
+                }}>
+                  <div className="label">community</div>
                     <div className={styles.wrapper}>
                       <img src="./blahajlogo-min.png" className={styles.logo} />
                     </div>

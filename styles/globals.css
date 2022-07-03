@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 :root {
-  --component-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  --component-border: 32px;
-  --component-border-left: 32px 0 0 32px;
-  --component-border-right: 0 32px 32px 0;
-  --component-border-top: 32px 32px 0 0;
-  --component-border-bottom: 0 0 32px 32px;
+  /* Site theme colours */
   --color-purple: #955FFA;
   --color-red: #FF6666;
   --color-red-light: #FFE5E5;
@@ -21,6 +16,24 @@
   --color-blue-light: #E4FFFF;
   --color-dark-purple: #46257e;
   --color-light-purple: #c5a4fd;
+  --color-white: #ececec;
+
+  /* Misc colours */
+  --color-leedsbg: #D8D3D4;
+  --color-uoftbg: #ccf6ff;
+  --color-westernbg: #ffd9fe;
+  --color-ilsrabg: #dbe1ee;
+  --color-mlhtop50bg: #151e30;
+  --color-dianaawardbg: #47c2ee;
+  --color-luubg: #009681;
+
+  /* General component formatting */
+  --component-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  --component-border: 32px;
+  --component-border-left: 32px 0 0 32px;
+  --component-border-right: 0 32px 32px 0;
+  --component-border-top: 32px 32px 0 0;
+  --component-border-bottom: 0 0 32px 32px;
   --text-outline: rgb(26, 26, 26) 3px 0px 0px, rgb(26, 26, 26) 2.83487px 0.981584px 0px, rgb(26, 26, 26) 2.35766px 1.85511px 0px, rgb(26, 26, 26) 1.62091px 2.52441px 0px, rgb(26, 26, 26) 0.705713px 2.91581px 0px, rgb(26, 26, 26) -0.287171px 2.98622px 0px, rgb(26, 26, 26) -1.24844px 2.72789px 0px, rgb(26, 26, 26) -2.07227px 2.16926px 0px, rgb(26, 26, 26) -2.66798px 1.37182px 0px, rgb(26, 26, 26) -2.96998px 0.42336px 0px, rgb(26, 26, 26) -2.94502px -0.571704px 0px, rgb(26, 26, 26) -2.59586px -1.50383px 0px, rgb(26, 26, 26) -1.96093px -2.27041px 0px, rgb(26, 26, 26) -1.11013px -2.78704px 0px, rgb(26, 26, 26) -0.137119px -2.99686px 0px, rgb(26, 26, 26) 0.850987px -2.87677px 0px, rgb(26, 26, 26) 1.74541px -2.43999px 0px, rgb(26, 26, 26) 2.44769px -1.73459px 0px, rgb(26, 26, 26) 2.88051px -0.838247px 0px;
   --text-outline-small: rgb(26, 26, 26) 1px 0px 0px, rgb(26, 26, 26) 0.540302px 0.841471px 0px, rgb(26, 26, 26) -0.416147px 0.909297px 0px, rgb(26, 26, 26) -0.989992px 0.14112px 0px, rgb(26, 26, 26) -0.653644px -0.756802px 0px, rgb(26, 26, 26) 0.283662px -0.958924px 0px, rgb(26, 26, 26) 0.96017px -0.279415px 0px;
 }
@@ -73,4 +86,66 @@ p, li {
 
 a {
 	text-decoration: none !important;
+}
+
+.header {
+	background-color: var(--color-green);
+	padding: 1em 1.5em;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	margin-bottom: 1.5em;
+}
+
+.content .header {
+	border-radius: var(--component-border-top);
+	margin-left: -2em;
+	margin-right: -2em;
+	margin-top: -2em;
+	box-shadow: none;
+	margin-bottom: 2em;
+}
+
+.header h2, .header h3 {
+	font-family: 'Fredoka One', cursive;
+	margin-bottom: 0;
+	color: white;
+	text-shadow: var(--text-outline);
+}
+
+.header h2 {
+	font-size: 2.5em;
+}
+
+.header h3 {
+	font-size: 2em;
+}
+
+.content .header h3 {
+	font-size: 1.6em;
+}
+
+.label {
+	border-radius: 4px;
+	background-color: var(--color-yellow);
+	display: inline-block;
+	padding: 0.5em;
+	font-weight: bold;
+  border-top-left-radius: 16px;
+}
+
+.content {
+	background-color: white;
+	border-radius: var(--component-border);
+	box-shadow: var(--component-shadow);
+	padding: 2em;
+	margin-bottom: 2em;
+}
+
+/* Useful helper classes */
+.low-padding {
+  padding: 1em;
+}
+
+.low-margin-bottom {
+  margin-bottom: 1em;
 }
