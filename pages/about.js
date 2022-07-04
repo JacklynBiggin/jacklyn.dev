@@ -25,7 +25,7 @@ export default function About() {
 						</div>
 					</Col>
 					<Col xs={12} md={8}>
-						<div className={`content full-height`}>
+						<div className={`content almost-full-height`}>
 							<p className={styles.handwritten}>Hey, I'm Jacklyn! 👋</p>
 							<p>I'm a developer advocate, lover of sharks, and always in search of opportunities to help newbies break into tech.</p>
 							<p>Currently, I'm working as a Developer Relations Lead at <a href="https://autocode.com">Autocode</a> where I empower young developers to make Discord Bots, APIs and more! You might have seen one of my <a href="https://youtube.com/autocodetv">tutorial videos</a> or <a href="https://autocode.com/community/tags/tutorial/">read one of my guides</a> if you're coming over to this website from Autocode.</p>
@@ -83,7 +83,7 @@ export default function About() {
 
 				<br />
 				<Row>
-					<Col xs={12} md={8}>
+					<Col xs={12} lg={8}>
 						<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
 							<h3>💼 Experience</h3>
 						</div>
@@ -181,7 +181,7 @@ export default function About() {
 						/>
 
 					</Col>
-					<Col xs={12} md={4}>
+					<Col xs={12} lg={4}>
 						<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
 							<h3>🏆 Awards</h3>
 						</div>

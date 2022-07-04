@@ -27,7 +27,7 @@
   --color-mlhtop50bg: #DEFCFF;
   --color-dianaawardbg: #E0FFFF;
   --color-luubg: #CCFFFF;
-  --color-mlhbg: #fafafa;
+  --color-mlhbg: #FFFFDE;
 
   /* General component formatting */
   --component-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -189,4 +189,12 @@ p a:hover {
 
 .low-margin-bottom {
   margin-bottom: 1em;
+}
+
+.full-height {
+  min-height: 100%
+}
+
+.almost-full-height {
+  min-height: calc(100% - 2em);
 }

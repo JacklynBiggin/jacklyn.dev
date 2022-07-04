@@ -53,7 +53,7 @@ export default function Projects() {
 						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="community"
-								link="https://blahagang.lol"
+								link="https://blahajgang.lol"
 								//link="/projects/blahajgang"
 								logo="./images/logos/projects/blahajgang.png"
 								background='url("./images/backgrounds/projects/blahajgang.png")'

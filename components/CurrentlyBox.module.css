@@ -1,0 +1,16 @@
+/* There's almost definitely a better way of doing this, but this'll do the job for now
+This is what handles the size/weight/spacing of the text in the education boxes */
+.currently {
+    margin-bottom: 1em;
+}
+
+.info p {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	font-size: 1em;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 16px;
+}
