@@ -8,19 +8,19 @@ export default function Home() {
 	return (
 		<Container>
 			<Row>
-				<Col xs={12}>
+				{/*<Col xs={12}>
 					<div className={`content low-padding ${styles.construction}`}>
 						<p>This website is still a work in progress! Some features, especially on mobile, might not work as expected.</p>
 					</div>
-				</Col>
-				<Col xs={12} md={9}>
+				</Col>*/}
+				<Col xs={12} xl={9}>
 					<div className="content full-height">
 						<p className={styles.handwritten}>Hey, I'm Jacklyn, and welcome to my website! 👋</p>
 						<p>I'm a developer advocate and love creating opportunities for young people to get into tech. I've got a ton of experience creating awesome hackathons, technical livestreams and videos.</p>
 						<p style={{ marginBottom: "-1em" }}>While you're here, feel free to <Link href="./projects">check out my past projects</Link>, <Link href="./blog">read some of my blog posts</Link>, or <Link href="./about">learn a bit more about me</Link>.</p>
 					</div>
 				</Col>
-				<Col xs={12} md={3}>
+				<Col xs={12} xl={3} className="d-none d-xl-flex">
 					<img src="./jacklyn.jpeg" alt="Jacklyn" className={styles.profile} />
 				</Col>
 			</Row>
@@ -48,7 +48,7 @@ export default function Home() {
 									url("./images/backgrounds/projects/hackquarantine.jpeg")'
 								/>
 							</Col>
-							<Col xs={12} md={6} lg={6}>
+							<Col xs={12} lg={6}>
 								<ProjectTile
 									label="video"
 									link="https://youtube.com/autocodetv"
@@ -59,7 +59,7 @@ export default function Home() {
 									background='url("./images/backgrounds/projects/autocodevideos.jpg")'
 								/>
 							</Col>
-							<Col xs={12} md={6} lg={6}>
+							<Col xs={12} lg={6}>
 								<ProjectTile
 									label="community"
 									link="https://blahajgang.lol"
