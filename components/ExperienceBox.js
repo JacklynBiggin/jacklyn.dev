@@ -6,7 +6,7 @@ export default function ExperienceBox(props) {
         <div className={`content low-padding ${props.type == "award" ? "low-margin-bottom" : ""} ${props.type == "education" ? styles.edu : null}`} style={{ backgroundColor: props.color }}>
             <Row style={props.inverted ? { color: "var(--color-white)" } : null}>
                 <Col xs={3}>
-                    <img className={props.type == "award" ? styles.logoaward : styles.logo} src={props.image} />
+                    <img className={props.type == "award" ? styles.logoaward : styles.logo} alt={props.name} src={props.image} />
                 </Col>
                 <Col xs={9} className={styles.info}>
                     <p><strong>{props.name}</strong></p>

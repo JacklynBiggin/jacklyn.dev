@@ -19,6 +19,7 @@ export default function Projects() {
 							<ProjectTile
 								label="community"
 								link="https://hackquarantine.com/"
+								alt="Hack Quarantine"
 								//link="/projects/hackquarantine"
 								logo="./images/logos/projects/hackquarantine.png"
 								largelogo
@@ -33,6 +34,7 @@ export default function Projects() {
 						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="video"
+								alt="Autocode Tutorials"
 								link="https://youtube.com/autocodetv"
 								//link="/projects/autocodevideos"
 								logo="./images/logos/projects/autocodevideos.png"
@@ -43,6 +45,7 @@ export default function Projects() {
 						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="writing,video"
+								alt="Intro to Python with Capital One"
 								link="https://www.youtube.com/watch?v=p4qdvP9HeoU&list=PLPDgudJ_VDUcgpSq_T1NdXaevNLawrOGo&index=8"
 								//link="/projects/capitalone"
 								logo="./images/logos/projects/capitalone.png"
@@ -53,6 +56,7 @@ export default function Projects() {
 						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="community"
+								alt="BLAHAJGang"
 								link="https://blahajgang.lol"
 								//link="/projects/blahajgang"
 								logo="./images/logos/projects/blahajgang.png"
@@ -62,6 +66,7 @@ export default function Projects() {
 						<Col xs={12} md={6} lg={4}>
 							<ProjectTile
 								label="video"
+								alt="Global Hack Week Livestreams"
 								link="https://www.youtube.com/watch?v=CcHc6mSya7c"
 								//link="/projects/ghwstreams"
 								logo="./images/logos/projects/ghwstreams.png"
@@ -73,6 +78,7 @@ export default function Projects() {
 								<Col xs={12} md={6} lg={4}>
 									<ProjectTile
 										label="code,2019"
+										alt="Leeds Student Radio Website and Intranet"
 										link="https://thisislsr.com"
 										//link="/projects/lsr"
 										mediumlogo
@@ -83,6 +89,7 @@ export default function Projects() {
 								<Col xs={12} md={6} lg={4}>
 									<ProjectTile
 										label="hackathon project,2019"
+										alt="Sharescription"
 										link="https://devpost.com/software/sharescription"
 										logo="./images/logos/projects/sharescription.png"
 										mediumlogo
@@ -92,6 +99,7 @@ export default function Projects() {
 								<Col xs={12} md={6} lg={4}>
 									<ProjectTile
 										label="hackathon project,2018"
+										alt="Ride.fyi"
 										link="https://devpost.com/software/ride-fyi"
 										logo="./images/logos/projects/ridefyi.png"
 										mediumlogo

@@ -35,7 +35,7 @@ export default function ProjectTile(props) {
                 <div className="label-container">{displayLabels}</div>
                 {/* need to fix this with jump issue before using - props.old ? <div className="label-bottom-container"><div className="label-bottom">{props.old}</div></div> : null*/}
                 <div className={styles.wrapper}>
-                    <img src={props.logo} className={styles.logo} style={props.largelogo ? {width: "20em"}: null ||  props.mediumlogo ? {width: "15em"}: null} />
+                    <img src={props.logo} alt={props.alt} className={styles.logo} style={props.largelogo ? {width: "20em"}: null ||  props.mediumlogo ? {width: "15em"}: null} />
                 </div>
             </div>
         </Link>

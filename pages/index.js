@@ -21,7 +21,7 @@ export default function Home() {
 					</div>
 				</Col>
 				<Col xs={12} md={3}>
-					<img src="./jacklyn.jpeg" className={styles.profile} />
+					<img src="./jacklyn.jpeg" alt="Jacklyn" className={styles.profile} />
 				</Col>
 			</Row>
 			<br />
@@ -39,6 +39,7 @@ export default function Home() {
 									//link="/projects/hackquarantine"
 									logo="./images/logos/projects/hackquarantine.png"
 									largelogo
+									alt="Hack Quarantine"
 									background='linear-gradient(
 									rgba(14, 20, 40, 0.85),
 									rgba(14, 20, 40, 0.85)
@@ -52,6 +53,7 @@ export default function Home() {
 									label="video"
 									link="https://youtube.com/autocodetv"
 									//link="/projects/autocodevideos"
+									alt="Autocode Tutorials"
 									logo="./images/logos/projects/autocodevideos.png"
 									mediumlogo
 									background='url("./images/backgrounds/projects/autocodevideos.jpg")'
@@ -61,6 +63,7 @@ export default function Home() {
 								<ProjectTile
 									label="community"
 									link="https://blahajgang.lol"
+									alt="BLAHAJGang"
 									//link="/projects/blahajgang"
 									logo="./images/logos/projects/blahajgang.png"
 									background='url("./images/backgrounds/projects/blahajgang.png")'

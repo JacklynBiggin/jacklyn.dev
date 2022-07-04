@@ -12,7 +12,7 @@ export default function About() {
 				</div>
 				<Row>
 					<Col xs={12} md={4}>
-						<img className={styles.profile} src="./jacklyn.jpeg" />
+						<img className={styles.profile} alt="Jacklyn" src="./jacklyn.jpeg" />
 						<div className="content">
 							<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
 								<h3>💡 TL;DR</h3>
