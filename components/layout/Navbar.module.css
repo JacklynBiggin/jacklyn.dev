@@ -24,13 +24,13 @@
 
 .nav > div > div > span {
 	padding: 0.5em;
-	transition: transform .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	display: block;
 	opacity: 0.7;
 	text-shadow: var(--text-outline);
 }
 
-.nav > div > div > span:hover {
+.nav > div > div:hover > span {
 	opacity: 1;
 }
 
