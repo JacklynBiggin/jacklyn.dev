@@ -20,7 +20,7 @@ export default function Header() {
               <a href="https://twitch.tv/JacklynBiggin"><FontAwesomeIcon icon={faTwitch} /></a>
               <br className="d-none d-md-inline"/>
               <a class={styles.tag} href="https://timeline.jacklyn.dev"><div>Timeline</div></a>
-              <a class={styles.tag} href="#"><div>Resume</div></a>
+              <a class={styles.tag} href="./Jacklyn%20Biggin%20Resume.pdf"><div>Resume</div></a>
             </div>
           </div>
           </Col>

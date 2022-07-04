@@ -71,7 +71,7 @@ export default function Home() {
 				</Col>
 				<Col xs={12} md={5} lg={4}>
 					<div className="header" style={{ backgroundColor: "var(--color-purple)" }}>
-						<h2>🎉 Currently</h2>
+						<h2>💡 TL;DR</h2>
 					</div>
 					<CurrentlyBox
 						color="var(--color-white)"
