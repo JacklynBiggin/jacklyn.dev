@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 jacklyn.dev - my portfolio website
 
-## Getting Started
+![Screenshot of jacklyn.dev](readme/screenshot.png)
 
-First, run the development server:
+## ❓ What is this repo?
+This is my personal website, available at [jacklyn.dev](https://jacklyn.dev)! I streamed myself building the core foundations over on [Twitch](https://twitch.tv/jacklynbiggin), and then finished it off during [INIT 2023](https://init.mlh.io).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 🛠 Tech Stack
+* Built using [Next.js](https://nextjs.org/) (bootstrapped with `create-next-app`)
+* Uses [Font Awesome](https://fontawesome.com/)'s [React component](https://fontawesome.com/v5/docs/web/use-with/react) for icons
+* Makes use of [React-Bootstrap](https://react-bootstrap-v4.netlify.app/) (1.x - so Bootstrap 4) for layout/helper classes
+* The email form on the contact page uses [Formspark's API](https://formspark.io/)
+* [Imgbot](https://imgbot.net/) automagically compresses images in this repo to help speed up load times
+* [Animate.css](https://animate.style/) is used for some animations
+* The live site is deployed to [Vercel](https://vercel.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Local Setup
+1. Clone this git repo and navigate to the repo's folder
+2. Run the development server with `npm run dev`
+3. You can now access the live preview by going to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project is structured like your typical Next.js project, so I'd recommend referring to [their docs](https://nextjs.org/docs) when making any changes.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 💭 Useful things to know
+* The colours used across the website are set in `styles/globals.css` as CSS variables
+  * There's also some other useful variables set in there, such as ways to easily add the correct drop shadow, text shadow (for outlines) and border-radius to elements
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 📝 License
+The code from this project is licensed under the [MIT License](LICENSE). Images, including logos, are property of their respective copyright owners.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
