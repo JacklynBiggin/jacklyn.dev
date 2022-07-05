@@ -91,6 +91,11 @@ export default function Home() {
 						thing="Studying <strong>Learning Design</strong> at the <strong>University of Toronto</strong>"
 						image="./images/logos/education/uoft.png"
 					/>
+					<CurrentlyBox
+						color="#CEF4D1"
+						thing="Writing my talk for <strong><a href='https://hackcon.mlh.io'>Hackcon X</a></strong>"
+						image="./images/logos/misc/hackcon.png"
+					/>
 				</Col>
 			</Row>
 
