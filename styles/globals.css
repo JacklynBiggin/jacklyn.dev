@@ -153,6 +153,7 @@ p a:hover {
 	padding: 0.5em;
   display: inline-block;
   margin-right: 0.5em;
+  color: var(--color-dark-gray)
 }
 
 .label-bottom-container {

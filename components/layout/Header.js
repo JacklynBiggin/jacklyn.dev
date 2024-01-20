@@ -8,7 +8,7 @@ export default function Header() {
 		<Container>
 			<Row>
 				<Col xs={12} md={8}>
-					<Link href="./"><h1 class={styles.title}>Hey, I'm Jacklyn! <span className={`${styles.hand} animate__animated animate__tada`}>👋</span></h1></Link>
+					<Link href="./"><h1 className={styles.title}>Hey, I'm Jacklyn! <span className={`${styles.hand} animate__animated animate__tada`}>👋</span></h1></Link>
 				</Col>
 				<Col xs={12} md={4} className={`d-none d-md-block ${styles.socialscontainer}`}>
 					<Socials />

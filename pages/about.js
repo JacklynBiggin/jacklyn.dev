@@ -42,7 +42,7 @@ export default function About() {
 					<h3>🎓 Education</h3>
 				</div>
 				<Row>
-					<Col xs={12} md={6}>
+					<Col xs={12}>
 						<ExperienceBox
 							type="education"
 							color="var(--color-uoftbg)"
@@ -53,8 +53,6 @@ export default function About() {
 							additional="Current Average: 99%"
 							image="./images/logos/education/uoft.png"
 						/>
-					</Col>
-					<Col xs={12} md={6}>
 						<ExperienceBox
 							type="education"
 							color="var(--color-leedsbg)"
@@ -65,8 +63,6 @@ export default function About() {
 							additional="Achieved First Class Honours"
 							image="./images/logos/education/leeds.png"
 						/>
-					</Col>
-					<Col xs={12} md={6}>
 						<ExperienceBox
 							type="education"
 							color="var(--color-westernbg)"

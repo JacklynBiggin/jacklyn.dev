@@ -2,12 +2,21 @@
 .nav {
 	background-color: white;
 	border-radius: var(--component-border);
-	box-shadow: var(--component-shadow);
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
+}
+
+.nav a {
+	color: white;
 	font-family: 'Balsamiq Sans', cursive;
 	font-weight: 700;
 	font-size: 1.5em;
-	color: white;
+	display: inline-block;
+	padding: 0.5em;
+	transition: all .2s ease-in-out;
+	display: block;
+	opacity: 0.7;
+	text-shadow: var(--text-outline);
+
 }
 
 .nav > div > div {
@@ -22,15 +31,7 @@
 	z-index: 500;
 }
 
-.nav > div > div > span {
-	padding: 0.5em;
-	transition: all .2s ease-in-out;
-	display: block;
-	opacity: 0.7;
-	text-shadow: var(--text-outline);
-}
-
-.nav > div > div:hover > span {
+.nav > div > div:hover > a {
 	opacity: 1;
 }
 
