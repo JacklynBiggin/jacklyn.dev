@@ -125,6 +125,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 }
 
 .eduEmojisLeft div:nth-child(1) {
+	margin-top: 0.5em;
 	font-size: 4em;
 	transform: rotate(-8deg);
 	margin-left: -0.2em;
@@ -171,6 +172,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 }
 
 .eduEmojisRight div:nth-child(1) {
+	margin-top: 0.5em;
 	font-size: 4em;
 	transform: rotate(8deg);
 }
