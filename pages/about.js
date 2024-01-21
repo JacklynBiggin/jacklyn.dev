@@ -46,10 +46,22 @@ export default function About() {
 						<ExperienceBox
 							type="education"
 							color="var(--color-uoftbg)"
+							name="Masters in Digital Experience Innovation"
+							institution="University of Waterloo"
+							from="August 2023"
+							to="Present"
+							additional="Current Average: 94%"
+							image="./images/logos/education/waterloo.png"
+						/>
+					</Col>
+					<Col xs={12} md={6}>
+						<ExperienceBox
+							type="education"
+							color="var(--color-uoftbg)"
 							name="Certificate in Learning Design"
 							institution="University of Toronto"
 							from="February 2022"
-							to="Present"
+							to="May 2023"
 							additional="Current Average: 99%"
 							image="./images/logos/education/uoft.png"
 						/>
