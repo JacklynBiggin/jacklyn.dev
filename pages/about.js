@@ -56,7 +56,7 @@ export default function About() {
 							image="./images/logos/education/waterloo.jpg"
 							extracurriculars={[
 								{
-									name: "Judge",
+									name: "Judge & Workshop Host",
 									institution: "Hackville",
 									image: "./images/logos/extracurriculars/hackville.png"
 								},
@@ -90,7 +90,7 @@ export default function About() {
 						<EducationBox
 							type="education"
 							color="var(--color-leedsbg)"
-							name="Bachelor of Arts, Digital Media (Hons)"
+							name="Bachelor of Arts, Digital Media (Honours)"
 							institution="University of Leeds"
 							from="September 2016"
 							to="July 2021"

@@ -36,12 +36,6 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 }
 
 @media only screen and (max-width: 767px) {
-    .logo {
-        width: 3em;
-        margin-right: 0.8em;
-
-    }
-
     .wrapper p:first-child {
         font-size: 1.1em;
     }
@@ -53,7 +47,6 @@ This is what handles the size/weight/spacing of the text in the education boxes 
     .wrapper p:nth-child(3) {
         font-size: 0.8em;
     }
-    
 }
 
 .logoaward {
@@ -70,11 +63,24 @@ This is what handles the size/weight/spacing of the text in the education boxes 
     border-radius: 16px;
     padding: 0.5em;
     margin-top: 1em;
+    border: 1px solid rgba(0, 0, 0 , 0.15)
 }
 
 .inner img, .inner > div {
     display: inline-block;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 575px) {
+    .wrapper > .logo, .wrapper > div {
+        display: block;
+        text-align: center;
+    }
+
+    .wrapper > .logo {
+        margin: auto;
+        margin-bottom: 1em;
+    }
 }
 
 .inner img {
