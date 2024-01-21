@@ -67,9 +67,19 @@ export default function About() {
 									image: "./images/logos/extracurriculars/hackville.png"
 								},
 								{
+									name: "Participant (In Progress)",
+									institution: "Uni Teaching Program",
+									image: "./images/logos/extracurriculars/uniteaching.png"
+								},
+								{
 									name: "Mentor",
 									institution: "Hack Western",
 									image: "./images/logos/extracurriculars/hackwestern.png"
+								},
+								{
+									name: "Participant (In Progress)",
+									institution: "Cert. in Leadership Dev.",
+									image: "./images/logos/extracurriculars/slp.png"
 								},
 								{
 									name: "Advisor",
@@ -119,6 +129,11 @@ export default function About() {
 									image: "./images/logos/extracurriculars/hackthenorth.png"
 								},
 								{
+									name: "Founder",
+									institution: "BLAHAJGang",
+									image: "./images/logos/extracurriculars/blahajgang.png"
+								},
+								{
 									name: "Software Dev Intern",
 									institution: "RBC Capital Markets",
 									image: "./images/logos/experience/rbc.png"
@@ -139,9 +154,19 @@ export default function About() {
 									image: "./images/logos/education/western.jpeg"
 								},
 								{
+									name: "Hero of the Moment",
+									institution: "I ❤️ Student Radio Awards",
+									image: "./images/logos/extracurriculars/ilsra.png"
+								},
+								{
 									name: "Head of Tech & Software",
 									institution: "Leeds Student Radio",
 									image: "./images/logos/experience/lsr.jpeg"
+								},
+								{
+									name: "Student Ambassador",
+									institution: "UoL School of Media",
+									image: "./images/logos/extracurriculars/studentambassador.jpg"
 								},
 								{
 									name: "Videographer",
@@ -167,8 +192,8 @@ export default function About() {
 					<h3>💼 Experience</h3>
 				</div>
 				<Row>
-					<Col xs={0} md={1}></Col>
-					<Col xs={12} lg={10}>
+					<Col xs={0} xl={1}></Col>
+					<Col xs={12} xl={10}>
 						<ExperienceBox
 							type="work"
 							name="Developer Advocate - Woo"
@@ -248,7 +273,7 @@ export default function About() {
 								]
 							}
 						/>
-						<Col xs={0} md={1}></Col>
+						<Col xs={0} xl={1}></Col>
 					</Col>
 				</Row>
 			</Container>
