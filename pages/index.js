@@ -78,23 +78,13 @@ export default function Home() {
 					</div>
 					<CurrentlyBox
 						color="var(--color-white)"
-						thing="Educating developers and building community at <strong>Autocode</strong>"
-						image="./images/logos/experience/autocode.svg"
+						thing="Improving docs and spreading good vibes at <strong>Automattic</strong>"
+						image="./images/logos/experience/automattic.jpg"
 					/>
 					<CurrentlyBox
-						color="var(--color-mlhbg)"
-						thing="Supporting hackathon organizers with <strong>Major League Hacking</strong>"
-						image="./images/logos/experience/mlh.jpeg"
-					/>
-					<CurrentlyBox
-						color="var(--color-uoftbg)"
-						thing="Studying <strong>Learning Design</strong> at the <strong>University of Toronto</strong>"
-						image="./images/logos/education/uoft.png"
-					/>
-					<CurrentlyBox
-						color="#CEF4D1"
-						thing="Writing my talk for <strong><a href='https://hackcon.mlh.io'>Hackcon X</a></strong>"
-						image="./images/logos/misc/hackcon.png"
+						color="var(--color-waterloobg)"
+						thing="Studying <strong>Digital Experience Innovation</strong> at the <strong>University of Waterloo</strong>"
+						image="./images/logos/education/waterloo.jpg"
 					/>
 				</Col>
 			</Row>

@@ -51,7 +51,7 @@ export default function About() {
 							from="August 2023"
 							to="Present"
 							additional="Current Average: 94%"
-							image="./images/logos/education/waterloo.png"
+							image="./images/logos/education/waterloo.jpg"
 						/>
 					</Col>
 					<Col xs={12} md={6}>
