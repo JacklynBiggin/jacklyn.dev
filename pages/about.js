@@ -1,7 +1,6 @@
 import styles from '../styles/about.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import ExperienceBox from '../components/ExperienceBox'
-import EducationBox from '../components/EducationBox'
 import Link from 'next/link'
 
 export default function About() {
@@ -43,9 +42,17 @@ export default function About() {
 					<h3>🎓 Education</h3>
 				</div>
 				<Row>
-					<Col xs={0} md={1}></Col>
-					<Col xs={12} md={10}>
-						<EducationBox
+					<Col xs={0} xl={1} className={`${styles.eduEmojisLeft} ${styles.emojis}`}>
+						<div>🏫</div>
+						<div>🧠</div>
+						<div>✨</div>
+						<div>👩🏻‍🎓</div>
+						<div>📚</div>
+						<div>🎉</div>
+						<div>🌟</div>
+					</Col>
+					<Col xs={12} xl={10}>
+						<ExperienceBox
 							type="education"
 							color="var(--color-waterloobg)"
 							name="Master of Digital Experience Innovation"
@@ -77,7 +84,7 @@ export default function About() {
 								}
 							]}
 						/>
-						<EducationBox
+						<ExperienceBox
 							type="education"
 							color="var(--color-uoftbg)"
 							name="Certificate in Learning Design"
@@ -87,7 +94,7 @@ export default function About() {
 							additional="94% Average"
 							image="./images/logos/education/uoft.png"
 						/>
-						<EducationBox
+						<ExperienceBox
 							type="education"
 							color="var(--color-leedsbg)"
 							name="Bachelor of Arts, Digital Media (Honours)"
@@ -145,22 +152,45 @@ export default function About() {
 							]}
 						/>
 					</Col>
-					<Col xs={0} md={1}></Col>
+					<Col xs={0} xl={1} className={`${styles.eduEmojisRight} ${styles.emojis}`}>
+						<div>🔥</div>
+						<div>🚀</div>
+						<div>🥳</div>
+						<div>👩🏻‍🏫</div>
+						<div>🤩</div>
+						<div>🏆</div>
+						<div>🌈</div>
+					</Col>
 				</Row>
 
 				<br />
+				<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
+					<h3>💼 Experience</h3>
+				</div>
 				<Row>
-					<Col xs={12} lg={8}>
-						<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
-							<h3>💼 Experience</h3>
-						</div>
+					<Col xs={0} md={1}></Col>
+					<Col xs={12} lg={10}>
+						<ExperienceBox
+							type="work"
+							name="Developer Advocate - WooCommerce"
+							institution="Automattic"
+							from="October 2023"
+							to="Present"
+							image="./images/logos/experience/automattic.jpg"
+							bullets={
+								[
+									"Developed and documented sample APIs, web-apps and bots for users to learn from",
+									"Scripted and presented technical education videos focused on JavaScript and API fundamentals watched over 180,000 times by users"
+								]
+							}
+						/>
 
 						<ExperienceBox
 							type="work"
 							name="Developer Relations Lead"
 							institution="Autocode"
 							from="September 2021"
-							to="Present"
+							to="September 2023"
 							image="./images/logos/experience/autocode.svg"
 							bullets={
 								[
@@ -172,10 +202,10 @@ export default function About() {
 
 						<ExperienceBox
 							type="work"
-							name="Hackathon Coach"
+							name="Hackathon Coach - NA & EU"
 							institution="Major League Hacking"
 							from="March 2019"
-							to="Present"
+							to="September 2023"
 							image="./images/logos/experience/mlh.jpeg"
 							bullets={
 								[
@@ -216,54 +246,9 @@ export default function About() {
 								]
 							}
 						/>
-
-					</Col>
-					<Col xs={12} lg={4}>
-						<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
-							<h3>🏆 Awards</h3>
-						</div>
-						<ExperienceBox
-							type="award"
-							color="var(--color-dianaawardbg)"
-							name="The Diana Award"
-							from="June 2021"
-							image="./images/logos/awards/dianaaward.jpeg"
-						/>
-						<ExperienceBox
-							type="award"
-							color="var(--color-mlhtop50bg)"
-							name="MLH Top 50"
-							institution="Major League Hacking"
-							from="June 2021"
-							image="./images/logos/awards/top50.png"
-						/>
-						<ExperienceBox
-							type="award"
-							color="var(--color-luubg)"
-							name="Outstanding Contribution"
-							institution="Leeds University Union"
-							from="May 2019"
-							image="./images/logos/awards/luu.jpeg"
-						/>
-						<ExperienceBox
-							type="award"
-							color="var(--color-ilsrabg)"
-							name="Hero of the Moment"
-							institution="I Love Student Radio Awards"
-							from="May 2018"
-							image="./images/logos/awards/ilsra.png"
-						/>
-						<ExperienceBox
-							type="award"
-							color="var(--color-white)"
-							name="14x Hackathon Category Wins"
-							from="September 2018"
-							to="May 2019"
-							image="./images/logos/experience/mlh.jpeg"
-						/>
+						<Col xs={0} md={1}></Col>
 					</Col>
 				</Row>
-
 			</Container>
 		</div>
 	)
