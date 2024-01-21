@@ -57,6 +57,11 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 .info ul {
 	padding-left: 1em;
     margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+.info ul li {
+    margin-bottom: 0.2em;
 }
 
 .inner {
@@ -73,12 +78,12 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 }
 
 @media only screen and (max-width: 575px) {
-    .wrapper > .logo, .wrapper > div {
+    .wrapper.edu > .logo, .wrapper.edu > div {
         display: block;
         text-align: center;
     }
 
-    .wrapper > .logo {
+    .wrapper.edu > .logo {
         margin: auto;
         margin-bottom: 1em;
     }
