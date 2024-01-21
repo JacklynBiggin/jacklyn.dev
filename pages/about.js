@@ -45,7 +45,7 @@ export default function About() {
 					<Col xs={12} md={6}>
 						<ExperienceBox
 							type="education"
-							color="var(--color-uoftbg)"
+							color="var(--color-waterloobg)"
 							name="Masters in Digital Experience Innovation"
 							institution="University of Waterloo"
 							from="August 2023"
