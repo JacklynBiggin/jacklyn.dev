@@ -1,6 +1,7 @@
 import styles from '../styles/about.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import ExperienceBox from '../components/ExperienceBox'
+import EducationBox from '../components/EducationBox'
 import Link from 'next/link'
 
 export default function About() {
@@ -42,55 +43,109 @@ export default function About() {
 					<h3>🎓 Education</h3>
 				</div>
 				<Row>
-					<Col xs={12} md={6}>
-						<ExperienceBox
+					<Col xs={0} md={1}></Col>
+					<Col xs={12} md={10}>
+						<EducationBox
 							type="education"
 							color="var(--color-waterloobg)"
-							name="Masters in Digital Experience Innovation"
+							name="Master of Digital Experience Innovation"
 							institution="University of Waterloo"
 							from="August 2023"
 							to="Present"
-							additional="Current Average: 94%"
+							additional="92% Average / 3.95 GPA"
 							image="./images/logos/education/waterloo.jpg"
+							extracurriculars={[
+								{
+									name: "Judge",
+									institution: "Hackville",
+									image: "./images/logos/extracurriculars/hackville.png"
+								},
+								{
+									name: "Mentor",
+									institution: "Hack Western",
+									image: "./images/logos/extracurriculars/hackwestern.png"
+								},
+								{
+									name: "Advisor",
+									institution: "Eclipse Expos",
+									image: "./images/logos/extracurriculars/eclipse.jpeg"
+								},
+								{
+									name: "Speaker",
+									institution: "TEDxColumbia Lake Youth",
+									image: "./images/logos/extracurriculars/tedx.png"
+								}
+							]}
 						/>
-					</Col>
-					<Col xs={12} md={6}>
-						<ExperienceBox
+						<EducationBox
 							type="education"
 							color="var(--color-uoftbg)"
 							name="Certificate in Learning Design"
 							institution="University of Toronto"
 							from="February 2022"
 							to="May 2023"
-							additional="Current Average: 99%"
+							additional="94% Average"
 							image="./images/logos/education/uoft.png"
 						/>
-					</Col>
-					<Col xs={12} md={6}>
-						<ExperienceBox
+						<EducationBox
 							type="education"
 							color="var(--color-leedsbg)"
-							name="BA (Hons) Digital Media (International)"
+							name="Bachelor of Arts, Digital Media (Hons)"
 							institution="University of Leeds"
 							from="September 2016"
-							to="July 2022"
-							additional="Achieved First Class Honours"
+							to="July 2021"
+							additional="First Class Honours"
 							image="./images/logos/education/leeds.png"
+							extracurriculars={[
+								{
+									name: "Receipient",
+									institution: "The Diana Award",
+									image: "./images/logos/awards/dianaaward.jpeg"
+								},
+								{
+									name: "MLH Top 50",
+									institution: "Major League Hacking",
+									image: "./images/logos/awards/top50.png"
+								},
+								{
+									name: "Workshop Lead",
+									institution: "Hack the North",
+									image: "./images/logos/extracurriculars/hackthenorth.png"
+								},
+								{
+									name: "Software Dev Intern",
+									institution: "RBC Capital Markets",
+									image: "./images/logos/experience/rbc.png"
+								},
+								{
+									name: "14x Hackathon Winner",
+									institution: "Major League Hacking",
+									image: "./images/logos/experience/mlh.jpeg"
+								},
+								{
+									name: "Receipient",
+									institution: "LUU Contribution Award",
+									image: "./images/logos/awards/luu.jpeg"
+								},
+								{
+									name: "Exchange Student",
+									institution: "Western University",
+									image: "./images/logos/education/western.jpeg"
+								},
+								{
+									name: "Head of Tech & Software",
+									institution: "Leeds Student Radio",
+									image: "./images/logos/experience/lsr.jpeg"
+								},
+								{
+									name: "Videographer",
+									institution: "Camp Lakota",
+									image: "./images/logos/extracurriculars/camplakota.png"
+								}
+							]}
 						/>
 					</Col>
-					<Col xs={12} md={6}>
-						<ExperienceBox
-							type="education"
-							color="var(--color-westernbg)"
-							name="Exchange/Study Abroad Year"
-							institution="Western University"
-							from="September 2018"
-							to="May 2019"
-							additional="Studied Computer Science and Media"
-							image="./images/logos/education/western.jpeg"
-						/>
-					</Col>
-					<br />
+					<Col xs={0} md={1}></Col>
 				</Row>
 
 				<br />
@@ -158,36 +213,6 @@ export default function About() {
 								[
 									"Managed a team of 20 volunteers to organize a 3,500 participant, three-week online hackathon focused on solving issues relating to COVID-19 in just ten days",
 									"Achieved record breaking metrics, with 251 project submissions, 40,000 unique website visitors and 1.9 million minutes of video content being consumed during the event"
-								]
-							}
-						/>
-
-						<ExperienceBox
-							type="work"
-							name="Head of Tech &amp; Software"
-							institution="Leeds Student Radio"
-							from="June 2017"
-							to="May 2020"
-							image="./images/logos/experience/lsr.jpeg"
-							bullets={
-								[
-									"Overhauled station broadcasting infrastructure, improving UX, and increasing productivity and online output while reducing future costs",
-									"Coordinated outside broadcasts, supported presenters with technical issues and ensured uptime in a fast-paced environment",
-									"Responsible for the station achieving bronze for Best Technical Achievement at the Student Radio Awards"
-								]
-							}
-						/>
-
-						<ExperienceBox
-							type="work"
-							name="Software Developer Intern (RBC Amplify)"
-							institution="RBC Capital Markets"
-							from="June 2019"
-							to="August 2019"
-							image="./images/logos/experience/rbc.png"
-							bullets={
-								[
-									"Worked in a team of four to implement design thinking methodologies within Capital Markets while collaborating with executive stakeholders to deliver their vision"
 								]
 							}
 						/>
