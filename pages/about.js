@@ -114,7 +114,7 @@ export default function About() {
 							image="./images/logos/education/leeds.png"
 							extracurriculars={[
 								{
-									name: "Receipient",
+									name: "Recipient",
 									institution: "The Diana Award",
 									image: "./images/logos/awards/dianaaward.jpeg"
 								},
