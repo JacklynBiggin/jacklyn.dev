@@ -1,0 +1,101 @@
+/* There's almost definitely a better way of doing this, but this'll do the job for now
+This is what handles the size/weight/spacing of the text in the education boxes */
+.wrapper > div, .wrapper > img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info p {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	font-size: 0.9em;
+    line-height: 1.4em;
+
+}
+.wrapper p:first-child {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.wrapper p:nth-child(2) {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 1.1em;
+}
+
+.wrapper p:nth-child(3) {
+	font-size: 0.8em;
+}
+
+.logo {
+    width: 4em;
+    border-radius: 16px;
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper p:first-child {
+        font-size: 1.1em;
+    }
+    
+    .wrapper p:nth-child(2) {
+        font-size: 1.0em;
+    }
+    
+    .wrapper p:nth-child(3) {
+        font-size: 0.8em;
+    }
+}
+
+.logoaward {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.info ul {
+	padding-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+.info ul li {
+    margin-bottom: 0.2em;
+}
+
+.inner {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 16px;
+    padding: 0.5em;
+    margin-top: 1em;
+    border: 1px solid rgba(0, 0, 0 , 0.15)
+}
+
+.inner img, .inner > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 575px) {
+    .wrapper.edu > .logo, .wrapper.edu > div {
+        display: block;
+        text-align: center;
+    }
+
+    .wrapper.edu > .logo {
+        margin: auto;
+        margin-bottom: 1em;
+    }
+}
+
+.inner img {
+    border-radius: 8px;
+    width: 3em;
+    margin-right: 1em;
+}
+
+.inner > div > p:nth-child(1) {
+    font-weight: bolder;
+    margin-bottom: 0;
+}
