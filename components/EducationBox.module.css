@@ -93,6 +93,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
     border-radius: 8px;
     width: 3em;
     margin-right: 1em;
+    border: 1px solid rgba(0, 0, 0 , 0.05)
 }
 
 .inner > div > p:nth-child(1) {
