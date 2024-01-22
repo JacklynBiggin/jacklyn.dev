@@ -89,6 +89,23 @@ export default function About({isVisible}) {
 									"Wrote 10+ SEO-optimized technical guides targeted at beginner developers to improve platform reach"
 								]
 							}
+							extracurriculars={[
+								{
+									name: "575,000+ views",
+									institution: "on YouTube",
+									image: "./images/logos/extracurriculars/youtube.png"
+								},
+								{
+									name: "400% increase",
+									institution: "in Discord server members",
+									image: "./images/logos/extracurriculars/discord.jpeg"
+								},
+								{
+									name: "10,000+ installs",
+									institution: "of sample projects",
+									image: "./images/logos/extracurriculars/autocodeprojects.png"
+								}
+							]}
 						/>
 
 						<ExperienceBox
@@ -106,6 +123,23 @@ export default function About({isVisible}) {
 									"Evangelized technical products such as Azure, Twilio and Auth0 to grow brand awareness among students"
 								]
 							}
+							extracurriculars={[
+								{
+									name: "50+ hackathons",
+									institution: "supported worldwide",
+									image: "./images/logos/extracurriculars/globe.png"
+								},
+								{
+									name: "15+ team members",
+									institution: "trained in devrel",
+									image: "./images/logos/extracurriculars/check.png"
+								},
+								{
+									name: "60+ technical workshops",
+									institution: "hosted IRL and online",
+									image: "./images/logos/extracurriculars/workshop.png"
+								}
+							]}
 						/>
 
 						<ExperienceBox
@@ -123,6 +157,23 @@ export default function About({isVisible}) {
 									"Maintained Python tools and scripted resiliency exercises; freeing up 20% of OpenShift cluster capacity"
 								]
 							}
+							extracurriculars={[
+								{
+									name: "700+ developers",
+									institution: "taught about the cloud",
+									image: "./images/logos/extracurriculars/cloud.png"
+								},
+								{
+									name: "4 interns",
+									institution: "mentored in software dev",
+									image: "./images/logos/extracurriculars/rocket.png"
+								},
+								{
+									name: "Silo Buster Award",
+									institution: "awarded for dev education",
+									image: "./images/logos/extracurriculars/award.png"
+								}
+							]}
 						/>
 
 						<ExperienceBox
@@ -138,6 +189,23 @@ export default function About({isVisible}) {
 									"Achieved record breaking metrics, with 251 project submissions, 40,000 unique website visitors and 1.9 million minutes of video content being consumed during the event"
 								]
 							}
+							extracurriculars={[
+								{
+									name: "1.9 million minutes",
+									institution: "of livestreams watched",
+									image: "./images/logos/extracurriculars/twitch.png"
+								},
+								{
+									name: "3,500 participants",
+									institution: "joined in ten days",
+									image: "./images/logos/extracurriculars/hqparticipants.png"
+								},
+								{
+									name: "250+ projects",
+									institution: "submitted to Devpost",
+									image: "./images/logos/extracurriculars/devpost.png"
+								}
+							]}
 						/>
 						<Col xs={0} xl={1}></Col>
 					</Col>
