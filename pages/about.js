@@ -217,7 +217,7 @@ export default function About({isVisible}) {
 				</div>
 				<Row>
 					<Col xs={0} xl={1}>
-						<motion.div className={`${styles.eduEmojisLeft} ${styles.emojis}`} transition={{ type: "spring", damping: 2.8, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}>
+						<motion.div className={`${styles.eduEmojisLeft} ${styles.emojis}`} viewport={{once: true}} transition={{ type: "spring", damping: 2.8, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}>
 							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 60, -8] }}>🏫</motion.div>
 							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 20, 6] }}>👩🏻‍🎓</motion.div>
 							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 80, -10] }}>🌟</motion.div>
@@ -377,7 +377,7 @@ export default function About({isVisible}) {
 						/>
 					</Col>
 					<Col xs={0} xl={1}>
-						<motion.div className={`${styles.eduEmojisRight} ${styles.emojis}`} transition={{ type: "spring", damping: 3, stiffness: 20, restDelta: 0.001, bounce: 0.3 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}>
+						<motion.div className={`${styles.eduEmojisRight} ${styles.emojis}`} viewport={{once: true}} transition={{ type: "spring", damping: 3, stiffness: 20, restDelta: 0.001, bounce: 0.3 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}>
 							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -30, 8] }}>🔥</motion.div>
 							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -40, 0] }}>🚀</motion.div>
 							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -20, 7] }}>🏆</motion.div>
