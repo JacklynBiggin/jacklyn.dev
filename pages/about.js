@@ -29,7 +29,7 @@ export default function About() {
 							<p className={styles.handwritten}>Hey, I'm Jacklyn! 👋</p>
 							<p>Currently, I'm working as a Developer Advocate for <a href="https://woo.com">WooCommerce</a> at <a href="https://automattic.com">Automattic</a> where I'm improving developer experience for the world's largest eCommerce platform.</p>
 							<p>Previously, I led Developer Relations at a seed-stage startup called <a href="https://autocode.com">Autocode</a>, supported 50+ student hackathons with <a href="https://mlh.io">Major League Hacking</a>, and launched <a href="https://hackquarantine.com">Hack Quarantine</a> - a 3,500 attendee hackathon. In 2021, I was featured in the <a href="https://top.mlh.io/2021/profiles/jacklyn-biggin">MLH Top 50</a> and was awarded <a href="https://diana-award.org.uk/our-programmes-and-initiatives/award-and-development/roll-of-honour/roll-of-honour-2021">The Diana Award</a> - "the most prestigious accolade a young person aged 9-25 years can receive for their social action or humanitarian work".</p>
-							<p>I'm based out of Toronto and Waterloo, Ontario, but am originally from the UK. I love to travel, and my favourite was to relax is to nearly miss very tight flight connections.</p>
+							<p>I'm based out of Toronto and Waterloo, Ontario, but am originally from the UK. I love to travel, and my favourite way to relax is to nearly miss very tight flight connections.</p>
 							<p>If you're looking for someone to speak at an event, help mentor new programmers or just want to chat, please feel free to <Link href="./contact">get in touch</Link>!</p>
 							<p>Chat soon!</p>
 						</div>
@@ -70,7 +70,7 @@ export default function About() {
 								},
 								{
 									name: "Participant (In Progress)",
-									institution: "Uni Teaching Program",
+									institution: "UW Uni Teaching Program",
 									image: "./images/logos/extracurriculars/uniteaching.png"
 								},
 								{
