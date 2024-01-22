@@ -2,8 +2,25 @@ import styles from '../styles/about.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import ExperienceBox from '../components/ExperienceBox'
 import Link from 'next/link'
+import { motion } from "framer-motion"
 
-export default function About() {
+const cardVariants = {
+	offscreen: {
+	  y: 300
+	},
+	onscreen: {
+	  y: 50,
+	  rotate: -10,
+	  transition: {
+		type: "spring",
+		bounce: 0.4,
+		duration: 0.8
+	  }
+	}
+  };
+
+
+export default function About({isVisible}) {
 	return (
 		<div className={styles.body}>
 			<Container>
@@ -38,19 +55,106 @@ export default function About() {
 
 				<br />
 				<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
+					<h3>💼 Experience</h3>
+				</div>
+				<Row>
+					<Col xs={0} xl={1}></Col>
+					<Col xs={12} xl={10}>
+						<ExperienceBox
+							type="work"
+							name="Developer Advocate - Woo"
+							institution="Automattic"
+							from="October 2023"
+							to="Present"
+							image="./images/logos/experience/automattic.jpg"
+							bullets={
+								[
+									"Launched new developer documentation site for WooCommerce, massively improving developer experience",
+								]
+							}
+						/>
+
+						<ExperienceBox
+							type="work"
+							name="Developer Relations Lead"
+							institution="Autocode"
+							from="September 2021"
+							to="September 2023"
+							image="./images/logos/experience/autocode.svg"
+							bullets={
+								[
+									"Researched, scripted, and presented instructional videos for Autocode’s YouTube channel, resulting in over 500,000 views, 7,500 subscribers, 97% like-to-dislike ratio, and 17,500 hours of watch time",
+									"Grew branded Discord server by 350% (9,000 to 32,000 members) while sustaining 20% week one retention rate by building ambassador program (scaling from 8 to 30 people) and running developer-focused events",
+									"Built sample projects (installed 10,000+ times) to improve platform retention and new ecosystem uptake",
+									"Wrote 10+ SEO-optimized technical guides targeted at beginner developers to improve platform reach"
+								]
+							}
+						/>
+
+						<ExperienceBox
+							type="work"
+							name="Hackathon Coach - NA & EU"
+							institution="Major League Hacking"
+							from="March 2019"
+							to="September 2023"
+							image="./images/logos/experience/mlh.jpeg"
+							bullets={
+								[
+									"Mentored students and coached organizers at 50+ hackathons across Europe, North America and online",
+									"Hosted 60+ technical workshops and livestreams for global audiences of 10 to 350 participants",
+									"Trained 15+ team members in event management and developer advocacy fundamentals",
+									"Evangelized technical products such as Azure, Twilio and Auth0 to grow brand awareness among students"
+								]
+							}
+						/>
+
+						<ExperienceBox
+							type="work"
+							name="Senior Developer"
+							institution="Royal Bank of Canada"
+							from="August 2020"
+							to="August 2021"
+							image="./images/logos/experience/rbc.png"
+							bullets={
+								[
+									"Educated 700+ developers in container technologies across RBC, winning internal Silo Buster award",
+									"Managed, developed, and presented interactive workshops and immersion days to interns and developers",
+									"Mentored four interns in developing a product integration that won Technical Distinction out of 20 teams",
+									"Maintained Python tools and scripted resiliency exercises; freeing up 20% of OpenShift cluster capacity"
+								]
+							}
+						/>
+
+						<ExperienceBox
+							type="work"
+							name="Founder &amp; Lead Organizer"
+							institution="Hack Quarantine"
+							from="March 2020"
+							to="May 2020"
+							image="./images/logos/experience/hackquarantine.jpeg"
+							bullets={
+								[
+									"Managed a team of 20 volunteers to organize a 3,500 participant, three-week online hackathon focused on solving issues relating to COVID-19 in just ten days",
+									"Achieved record breaking metrics, with 251 project submissions, 40,000 unique website visitors and 1.9 million minutes of video content being consumed during the event"
+								]
+							}
+						/>
+						<Col xs={0} xl={1}></Col>
+					</Col>
+				</Row>
+				
+				<br />
+				<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
 					<h3>🎓 Education</h3>
 				</div>
 				<Row>
-					<Col xs={0} xl={1} className={`${styles.eduEmojisLeft} ${styles.emojis}`}>
-						<div>🏫</div>
-						<div>🧠</div>
-						<div>✨</div>
-						<div>👩🏻‍🎓</div>
-						<div>📚</div>
-						<div>🎉</div>
-						<div>🌟</div>
-						<div>😎</div>
-						<div>🎒</div>
+					<Col xs={0} xl={1}>
+						<motion.div className={`${styles.eduEmojisLeft} ${styles.emojis}`} transition={{ type: "spring", damping: 2.8, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 60, -8] }}>🏫</motion.div>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 20, 6] }}>👩🏻‍🎓</motion.div>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 80, -10] }}>🌟</motion.div>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, 40, 12] }}>🎒</motion.div>
+						</motion.div>
 					</Col>
 					<Col xs={12} xl={10}>
 						<ExperienceBox
@@ -204,106 +308,13 @@ export default function About() {
 							]}
 						/>
 					</Col>
-					<Col xs={0} xl={1} className={`${styles.eduEmojisRight} ${styles.emojis}`}>
-						<div>🔥</div>
-						<div>🚀</div>
-						<div>🥳</div>
-						<div>👩🏻‍🏫</div>
-						<div>🤩</div>
-						<div>🏆</div>
-						<div>🌈</div>
-						<div>📙</div>
-						<div>🍁</div>
-					</Col>
-				</Row>
-
-				<br />
-				<div className="header" style={{ backgroundColor: "var(--color-green)" }}>
-					<h3>💼 Experience</h3>
-				</div>
-				<Row>
-					<Col xs={0} xl={1}></Col>
-					<Col xs={12} xl={10}>
-						<ExperienceBox
-							type="work"
-							name="Developer Advocate - Woo"
-							institution="Automattic"
-							from="October 2023"
-							to="Present"
-							image="./images/logos/experience/automattic.jpg"
-							bullets={
-								[
-									"Launched new developer documentation site for WooCommerce, massively improving developer experience",
-								]
-							}
-						/>
-
-						<ExperienceBox
-							type="work"
-							name="Developer Relations Lead"
-							institution="Autocode"
-							from="September 2021"
-							to="September 2023"
-							image="./images/logos/experience/autocode.svg"
-							bullets={
-								[
-									"Researched, scripted, and presented instructional videos for Autocode’s YouTube channel, resulting in over 500,000 views, 7,500 subscribers, 97% like-to-dislike ratio, and 17,500 hours of watch time",
-									"Grew branded Discord server by 350% (9,000 to 32,000 members) while sustaining 20% week one retention rate by building ambassador program (scaling from 8 to 30 people) and running developer-focused events",
-									"Built sample projects (installed 10,000+ times) to improve platform retention and new ecosystem uptake",
-									"Wrote 10+ SEO-optimized technical guides targeted at beginner developers to improve platform reach"
-								]
-							}
-						/>
-
-						<ExperienceBox
-							type="work"
-							name="Hackathon Coach - NA & EU"
-							institution="Major League Hacking"
-							from="March 2019"
-							to="September 2023"
-							image="./images/logos/experience/mlh.jpeg"
-							bullets={
-								[
-									"Mentored students and coached organizers at 50+ hackathons across Europe, North America and online",
-									"Hosted 60+ technical workshops and livestreams for global audiences of 10 to 350 participants",
-									"Trained 15+ team members in event management and developer advocacy fundamentals",
-									"Evangelized technical products such as Azure, Twilio and Auth0 to grow brand awareness among students"
-								]
-							}
-						/>
-
-						<ExperienceBox
-							type="work"
-							name="Senior Developer"
-							institution="Royal Bank of Canada"
-							from="August 2020"
-							to="August 2021"
-							image="./images/logos/experience/rbc.png"
-							bullets={
-								[
-									"Educated 700+ developers in container technologies across RBC, winning internal Silo Buster award",
-									"Managed, developed, and presented interactive workshops and immersion days to interns and developers",
-									"Mentored four interns in developing a product integration that won Technical Distinction out of 20 teams",
-									"Maintained Python tools and scripted resiliency exercises; freeing up 20% of OpenShift cluster capacity"
-								]
-							}
-						/>
-
-						<ExperienceBox
-							type="work"
-							name="Founder &amp; Lead Organizer"
-							institution="Hack Quarantine"
-							from="March 2020"
-							to="May 2020"
-							image="./images/logos/experience/hackquarantine.jpeg"
-							bullets={
-								[
-									"Managed a team of 20 volunteers to organize a 3,500 participant, three-week online hackathon focused on solving issues relating to COVID-19 in just ten days",
-									"Achieved record breaking metrics, with 251 project submissions, 40,000 unique website visitors and 1.9 million minutes of video content being consumed during the event"
-								]
-							}
-						/>
-						<Col xs={0} xl={1}></Col>
+					<Col xs={0} xl={1}>
+						<motion.div className={`${styles.eduEmojisRight} ${styles.emojis}`} transition={{ type: "spring", damping: 3, stiffness: 20, restDelta: 0.001, bounce: 0.3 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -30, 8] }}>🔥</motion.div>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -40, 0] }}>🚀</motion.div>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -20, 7] }}>🏆</motion.div>
+							<motion.div viewport={{once: true}} whileInView={{ rotate: [0, -80, -9] }}>📙</motion.div>
+						</motion.div>
 					</Col>
 				</Row>
 			</Container>

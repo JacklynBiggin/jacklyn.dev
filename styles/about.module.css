@@ -119,6 +119,9 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	}
 }
 
+.emojis {
+	z-index: -1; /* for animation */
+}
 
 .emojis div {
 	text-shadow: var(--text-outline);
@@ -133,21 +136,23 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 
 .eduEmojisLeft div:nth-child(2) {
 	font-size: 5em;
-	transform: rotate(2deg);
-	margin-left: -0.2em;
-	margin-top: 0.2em;
+	transform: rotate(8deg);
+	margin-left: -0.6em;
+	margin-top: 2em;
 }
 
 .eduEmojisLeft div:nth-child(3) {
-	font-size: 3em;
+	margin-top: 2em;
+	font-size: 4em;
+	margin-left: -0.3em;
 	transform: rotate(-4deg);
 }
 
 .eduEmojisLeft div:nth-child(4) {
-	font-size: 5em;
-	margin-left: -0.2em;
-	transform: rotate(6deg);
-	margin-top: 0.3em;
+	font-size: 6em;
+	margin-left: -0.4em;
+	transform: rotate(12deg);
+	margin-top: 1.5em;
 }
 
 .eduEmojisLeft div:nth-child(5) {
@@ -161,7 +166,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	font-size: 2.5em;
 	transform: rotate(-100deg);
 	margin-top: -0.4em;
-	margin-left: -0.8em;
+	margin-left: -1.2em;
 }
 
 .eduEmojisLeft div:nth-child(7) {
@@ -185,26 +190,29 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 }
 
 .eduEmojisRight div:nth-child(1) {
-	margin-top: 0.5em;
-	font-size: 4em;
+	margin-top: 1em;
+	margin-left: 0.2em;
+	font-size: 5em;
 	transform: rotate(8deg);
 }
 
 .eduEmojisRight div:nth-child(2) {
 	font-size: 4.5em;
-	margin-top: 0.2em;
+	margin-top: 1.8em;
+	margin-left: 0.5em;
 }
 
 .eduEmojisRight div:nth-child(3) {
 	font-size: 5em;
 	transform: rotate(7deg);
-	margin-top: 0.2em;
+	margin-left: 0.15em;
+	margin-top: 2em;
 }
 
 .eduEmojisRight div:nth-child(4) {
-	font-size: 3em;
-	transform: rotate(-6deg);
-	margin-top: 0.3em;
+	font-size: 5.5em;
+	transform: rotate(-9deg);
+	margin-top: 2em;
 	margin-left: 0.2em;
 }
 
