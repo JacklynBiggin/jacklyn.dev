@@ -49,6 +49,8 @@ export default function About() {
 						<div>📚</div>
 						<div>🎉</div>
 						<div>🌟</div>
+						<div>😎</div>
+						<div>🎒</div>
 					</Col>
 					<Col xs={12} xl={10}>
 						<ExperienceBox
@@ -114,12 +116,12 @@ export default function About() {
 							image="./images/logos/education/leeds.png"
 							extracurriculars={[
 								{
-									name: "Recipient",
+									name: "🏆 Recipient",
 									institution: "The Diana Award",
 									image: "./images/logos/awards/dianaaward.jpeg"
 								},
 								{
-									name: "MLH Top 50",
+									name: "🏆 MLH Top 50",
 									institution: "Major League Hacking",
 									image: "./images/logos/awards/top50.png"
 								},
@@ -139,23 +141,13 @@ export default function About() {
 									image: "./images/logos/experience/rbc.png"
 								},
 								{
-									name: "14x Hackathon Winner",
-									institution: "Major League Hacking",
-									image: "./images/logos/experience/mlh.jpeg"
-								},
-								{
-									name: "Receipient",
+									name: "🏆 Recipient",
 									institution: "LUU Contribution Award",
 									image: "./images/logos/awards/luu.jpeg"
 								},
 								{
-									name: "Exchange Student",
-									institution: "Western University",
-									image: "./images/logos/education/western.jpeg"
-								},
-								{
-									name: "Hero of the Moment",
-									institution: "I ❤️ Student Radio Awards",
+									name: "🏆 Hero of the Moment",
+									institution: "I ❤ Student Radio Awards",
 									image: "./images/logos/extracurriculars/ilsra.png"
 								},
 								{
@@ -164,14 +156,50 @@ export default function About() {
 									image: "./images/logos/experience/lsr.jpeg"
 								},
 								{
-									name: "Student Ambassador",
-									institution: "UoL School of Media",
-									image: "./images/logos/extracurriculars/studentambassador.jpg"
-								},
-								{
 									name: "Videographer",
 									institution: "Camp Lakota",
 									image: "./images/logos/extracurriculars/camplakota.png"
+								}
+							]}
+						/>
+						<ExperienceBox
+							type="education"
+							color="var(--color-westernbg)"
+							name="Undergraduate Exchange"
+							institution="Western University"
+							from="September 2018"
+							to="May 2019"
+							image="./images/logos/education/western.jpeg"
+							extracurriculars={[
+								{
+									name: "🥇 First Place",
+									institution: "UrbanHacks",
+									image: "./images/logos/extracurriculars/urbanhacks.png"
+								},
+								{
+									name: "🥈 Second Place",
+									institution: "uOttaHack",
+									image: "./images/logos/extracurriculars/uottahack.png"
+								},
+								{
+									name: "🏆 5x Winner",
+									institution: "VandyHacks",
+									image: "./images/logos/extracurriculars/vandyhacks.png"
+								},
+								{
+									name: "🏆 4x Winner",
+									institution: "GrizzHacks",
+									image: "./images/logos/extracurriculars/grizzhacks.png"
+								},
+								{
+									name: "🏆 Best Use of Stdlib",
+									institution: "UofTHacks",
+									image: "./images/logos/extracurriculars/uofthacks.png"
+								},
+								{
+									name: "🏆 Best Game",
+									institution: "McHacks",
+									image: "./images/logos/extracurriculars/mchacks.png"
 								}
 							]}
 						/>
@@ -184,6 +212,8 @@ export default function About() {
 						<div>🤩</div>
 						<div>🏆</div>
 						<div>🌈</div>
+						<div>📙</div>
+						<div>🍁</div>
 					</Col>
 				</Row>
 
