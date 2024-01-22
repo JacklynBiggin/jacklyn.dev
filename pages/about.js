@@ -80,7 +80,7 @@ export default function About() {
 								},
 								{
 									name: "Participant (In Progress)",
-									institution: "Cert. in Leadership Dev.",
+									institution: "UW Leadership Dev. Cert.",
 									image: "./images/logos/extracurriculars/slp.png"
 								},
 								{

@@ -78,12 +78,12 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 }
 
 @media only screen and (max-width: 575px) {
-    .wrapper.edu > .logo, .wrapper.edu > div {
+    .wrapper > .logo, .wrapper > div {
         display: block;
         text-align: center;
     }
 
-    .wrapper.edu > .logo {
+    .wrapper > .logo {
         margin: auto;
         margin-bottom: 1em;
     }
