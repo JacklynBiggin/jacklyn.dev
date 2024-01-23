@@ -252,3 +252,47 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 		display: none;
 	}
 }
+
+.experienceImagesLeft img:nth-child(1) {
+	margin-top: 25em;
+	margin-left: -9.5em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(-10deg);
+}
+.experienceImagesRight img:nth-child(1) {
+	margin-left: 1em;
+	margin-top: 5em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(6deg);
+}
+
+.experienceImagesRight img:nth-child(2) {
+	margin-left: 1em;
+	margin-top: 15em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(-4deg);
+}
+
+.experienceImagesRight img:nth-child(3) {
+	margin-left: 1em;
+	margin-top: 15em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(8deg);
+}
+
+.experienceImagesRight img:nth-child(4) {
+	margin-left: 1em;
+	margin-top: 15em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(-4deg);
+}

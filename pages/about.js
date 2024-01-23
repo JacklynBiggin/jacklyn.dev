@@ -58,7 +58,9 @@ export default function About({isVisible}) {
 					<h3>💼 Experience</h3>
 				</div>
 				<Row>
-					<Col xs={0} xl={1}></Col>
+				<Col xs={0} xl={1} className={styles.experienceImagesLeft}>
+						<img src="./images/experience/mlh-2.jpeg" alt="Mentoring students" />
+					</Col>
 					<Col xs={12} xl={10}>
 						<ExperienceBox
 							type="work"
@@ -207,7 +209,12 @@ export default function About({isVisible}) {
 								}
 							]}
 						/>
-						<Col xs={0} xl={1}></Col>
+					</Col>
+					<Col xs={0} xl={1} className={styles.experienceImagesRight}>
+						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 4, stiffness: 18, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1, rotate: [0, 60, -8] }}><img src="./images/experience/mlh-3.jpeg" alt="Teaching!" /></motion.div>
+						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 4, stiffness: 18, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1, rotate: [0, 60, -8] }}><img src="./images/experience/tedx.jpeg" alt="Speaking at TEDx" /></motion.div>
+						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 4, stiffness: 18, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1, rotate: [0, 60, -8] }}><img src="./images/experience/mlh-1.jpeg" alt="On stage at uOttaHack" /></motion.div>
+						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 4, stiffness: 18, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1, rotate: [0, 60, -8] }}><img src="./images/experience/mlh-4.jpeg" alt="Teaching a workshop" /></motion.div>
 					</Col>
 				</Row>
 				
