@@ -59,9 +59,11 @@ export default function About({isVisible}) {
 				</div>
 				<Row>
 					<Col xs={0} xl={1} className={styles.experienceImagesLeft}>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-5.jpeg" alt="On a podcast!" /></motion.div>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-2.jpeg" alt="Mentoring students" /></motion.div>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-6.jpeg" alt="Teaching a workshop" /></motion.div>
+						<div className={styles.emojis}>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-5.jpeg" alt="On a podcast!" /></motion.div>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-2.jpeg" alt="Mentoring students" /></motion.div>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-6.jpeg" alt="Teaching a workshop" /></motion.div>
+						</div>
 					</Col>
 					<Col xs={12} xl={10}>
 						<ExperienceBox
@@ -213,10 +215,12 @@ export default function About({isVisible}) {
 						/>
 					</Col>
 					<Col xs={0} xl={1} className={styles.experienceImagesRight}>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-3.jpeg" alt="Teaching!" /></motion.div>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 5.5, stiffness: 23, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/tedx.jpeg" alt="Speaking at TEDx" /></motion.div>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 7, stiffness: 25, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-1.jpeg" alt="On stage at uOttaHack" /></motion.div>
-						<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 4.5, stiffness: 20, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-4.jpeg" alt="Teaching a workshop" /></motion.div>
+						<div className={styles.emojis}>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 6, stiffness: 22, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-3.jpeg" alt="Teaching!" /></motion.div>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 5.5, stiffness: 23, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/tedx.jpeg" alt="Speaking at TEDx" /></motion.div>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 7, stiffness: 25, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-1.jpeg" alt="On stage at uOttaHack" /></motion.div>
+							<motion.div viewport={{once: true}} transition={{ type: "spring", damping: 4.5, stiffness: 20, restDelta: 0.001, bounce: 0.4 }} initial={{ opacity: 0, x: "-8em", scale: 0.1}} whileInView={{ opacity: 1, x: "0", scale: 1 }}><img src="./images/experience/mlh-4.jpeg" alt="Teaching a workshop" /></motion.div>
+						</div>
 					</Col>
 				</Row>
 				
