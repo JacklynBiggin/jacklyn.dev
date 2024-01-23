@@ -315,3 +315,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	border-radius: var(--component-border);
 	transform: rotate(-4deg);
 }
+
+.emojis > div > img {
+	box-shadow: var(--component-shadow);
+}
