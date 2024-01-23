@@ -253,7 +253,16 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	}
 }
 
-.experienceImagesLeft img:nth-child(1) {
+.experienceImagesLeft div:nth-child(1) img {
+	margin-top: 15em;
+	margin-left: -9.5em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(6deg);
+}
+
+.experienceImagesLeft div:nth-child(2) img {
 	margin-top: 25em;
 	margin-left: -9.5em;
 	width: 12em;
@@ -261,7 +270,17 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	border-radius: var(--component-border);
 	transform: rotate(-10deg);
 }
-.experienceImagesRight img:nth-child(1) {
+
+.experienceImagesLeft div:nth-child(3) img {
+	margin-top: 22em;
+	margin-left: -9.5em;
+	width: 12em;
+	border: 4px solid white;
+	border-radius: var(--component-border);
+	transform: rotate(6deg);
+}
+
+.experienceImagesRight div:nth-child(1) img {
 	margin-left: 1em;
 	margin-top: 5em;
 	width: 12em;
@@ -270,7 +289,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	transform: rotate(6deg);
 }
 
-.experienceImagesRight img:nth-child(2) {
+.experienceImagesRight div:nth-child(2) img {
 	margin-left: 1em;
 	margin-top: 15em;
 	width: 12em;
@@ -279,7 +298,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	transform: rotate(-4deg);
 }
 
-.experienceImagesRight img:nth-child(3) {
+.experienceImagesRight div:nth-child(3) img {
 	margin-left: 1em;
 	margin-top: 15em;
 	width: 12em;
@@ -288,7 +307,7 @@ This is what handles the size/weight/spacing of the text in the education boxes 
 	transform: rotate(8deg);
 }
 
-.experienceImagesRight img:nth-child(4) {
+.experienceImagesRight div:nth-child(4) img {
 	margin-left: 1em;
 	margin-top: 15em;
 	width: 12em;
