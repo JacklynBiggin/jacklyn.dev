@@ -5,6 +5,7 @@
 
 .icons svg {
 	font-size: 2em;
+	max-height: 1em;
 	margin-left: 0.5em;
 	color: #C6A4FD;
 	transition: transform .2s ease-in-out;
@@ -19,7 +20,7 @@
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-left: 0.5em;
-	margin-top: 0.5em;
+	margin-top: 0.6em;
 	color: var(--color-dark-purple);
 	transition: transform .2s ease-in-out;
 }

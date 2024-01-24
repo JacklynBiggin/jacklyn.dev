@@ -121,7 +121,7 @@ p a:hover {
 }
 
 .header h2, .header h3 {
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Fredoka One', sans-serif;
 	margin-bottom: 0;
 	color: white;
 	text-shadow: var(--text-outline);
