@@ -22,7 +22,8 @@
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^1.5.2",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
