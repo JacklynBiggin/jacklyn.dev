@@ -90,3 +90,9 @@
     rotate: -50deg;
     transform: scaleX(-1);
 }
+
+@media screen and (max-width: 1199px) {
+	.textLeft, .textRight, .arrowLeft, .arrowRight {
+		display: none;
+	}
+}
