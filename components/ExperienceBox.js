@@ -12,7 +12,7 @@ export default function ExperienceBox(props) {
                         <div>
                             <p><strong>{props.name}</strong></p>
                             <p>{props.institution}</p>
-                            <p>{props.from} {props.to ? "to " + props.to : null} {props.additional ? " • " + props.additional : null}</p>
+                            <p>{props.from} {props.to ? "to " + props.to : null} {props.additional && props.to ? " • " : null} {props.additional ? props.additional : null}</p>
                         </div>
                     </div>
 

@@ -51,3 +51,42 @@
 	margin-bottom: 1em;
 }
 
+.scribbles {
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	margin-left: 0;
+	color: var(--color-light-purple);
+	margin-bottom: 1em;
+}
+
+.textLeft {
+	display: inline-block;
+    position: absolute;
+    left: 9em;
+    top: 4.8em;
+    rotate: -20deg;
+}
+
+.arrowLeft {
+	height: 4em;
+    margin-left: 16em;
+    margin-top: -1em;
+    rotate: 46deg;
+}
+
+.textRight {
+	display: inline-block;
+    position: absolute;
+    left: 12em;
+    top: 4.7em;
+    rotate: 13deg;
+}
+
+.arrowRight {
+	height: 4em;
+    margin-left: 16em;
+    margin-top: -1em;
+    rotate: -50deg;
+    transform: scaleX(-1);
+}
