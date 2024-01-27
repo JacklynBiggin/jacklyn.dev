@@ -35,7 +35,7 @@ export default function About({isVisible}) {
 								<h3>💡 TL;DR</h3>
 							</div>
 							<ul className={styles.tldr}>
-								<li>Toronto, ON, Canada</li>
+								<li>Toronto & Waterloo, Canada</li>
 								<li>Developer Advocate for WooCommerce at Automattic</li>
 								<li>Grad Student at the University of Waterloo</li>
 							</ul>
