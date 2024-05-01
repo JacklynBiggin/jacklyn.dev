@@ -100,3 +100,17 @@ This is what handles the size/weight/spacing of the text in the education boxes 
     font-weight: bolder;
     margin-bottom: 0;
 }
+
+div.soon {
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    transform: rotate(338deg);
+    top: 0.8em;
+    left: 0.5em;
+    padding: 0.2em;
+    background-color: var(--color-light-purple);
+    border-radius: 4px;
+    font-size: 0.7em;
+    color: var(--color-dark-purple);
+}

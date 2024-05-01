@@ -23,7 +23,7 @@ export default function ExperienceBox(props) {
                     : null}
 
                     <Row className={styles.innerWrapper}>
-                        {props.extracurriculars !== undefined ? props.extracurriculars.map((extracurricular, index) => <Extracurricular key={index} name={extracurricular.name} institution={extracurricular.institution} image={extracurricular.image} />) : null} 
+                        {props.extracurriculars !== undefined ? props.extracurriculars.map((extracurricular, index) => <Extracurricular key={index} name={extracurricular.name} institution={extracurricular.institution} image={extracurricular.image} soon={extracurricular.soon} />) : null} 
                     </Row>
                 </Col>
             </Row>
