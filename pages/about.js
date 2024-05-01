@@ -68,7 +68,7 @@ export default function About({isVisible}) {
 					<Col xs={12} xl={10}>
 						<ExperienceBox
 							type="work"
-							name="Developer Advocate - Woo"
+							name="Developer Advocate - WooCommerce"
 							institution="Automattic"
 							from="October 2023"
 							to="Present"
@@ -249,6 +249,28 @@ export default function About({isVisible}) {
 							image="./images/logos/education/waterloo.jpg"
 							extracurriculars={[
 								{
+									name: "Candidate (In Progress)",
+									institution: "GDip in Climate Change",
+									image: "./images/logos/extracurriculars/uwenv.jpg",
+									soon: true
+								},
+								{
+									name: "Candidate (In Progress)",
+									institution: "Community Leader. Cert.",
+									image: "./images/logos/extracurriculars/clc.png",
+									soon: true
+								},
+								{
+									name: "Mentor",
+									institution: "Tech+ UW",
+									image: "./images/logos/extracurriculars/techplus.png"
+								},
+								{
+									name: "🏆 Runner Up (Most Rizz)",
+									institution: "Wabi-Sabi-Thon",
+									image: "./images/logos/extracurriculars/wabisabithon.jpg"
+								},
+								{
 									name: "Judge & Workshop Host",
 									institution: "Hackville",
 									image: "./images/logos/extracurriculars/hackville.png"
@@ -262,11 +284,6 @@ export default function About({isVisible}) {
 									name: "Mentor",
 									institution: "Hack Western",
 									image: "./images/logos/extracurriculars/hackwestern.png"
-								},
-								{
-									name: "Participant (In Progress)",
-									institution: "UW Leadership Dev. Cert.",
-									image: "./images/logos/extracurriculars/slp.png"
 								},
 								{
 									name: "Advisor",
